@@ -36,7 +36,7 @@ the-journey.ai/
 
 ## 🌍 Live Demo
 🔗 Visit the website here:  
-👉 [The Journey.ai]([https://USERNAME.github.io/the-journey.ai](https://keybeduro-lab.github.io/the-journey.ai/))
+👉 [The Journey.ai]([https://USERNAME.github.io/the-journey.ai](https://keybeduro-lab.github.io/the-journey.ai/](https://keybeduro-lab.github.io/the-journey.ai/))
 
 ---
 
