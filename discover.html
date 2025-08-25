@@ -1,0 +1,2021 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discover Quezon - THE JOURNEY.ai</title>
+    <link
+      rel="stylesheet"
+      href="discover.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="mainHeader">
+      <div class="nav-container">
+        <div class="logo">THE JOURNEY<span>.ai</span></div>
+        <nav class="nav-links">
+          <a href="HTML_Home.html">Home</a>
+          <a href="#" class="active">Discover</a>
+          <a href="HTML_About.html">About</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Discover Section -->
+    <section class="discover">
+      <div class="container">
+        <h1 class="section-title">Discover Quezon Province</h1>
+
+        <!-- Category Filters -->
+        <div class="category-filters">
+          <button class="filter-btn active" data-filter="all">
+            All Destinations
+          </button>
+          <button class="filter-btn" data-filter="beach">
+            <i class="fas fa-umbrella-beach"></i> Beaches
+          </button>
+          <button class="filter-btn" data-filter="mountain">
+            <i class="fas fa-mountain"></i> Mountains
+          </button>
+          <button class="filter-btn" data-filter="cultural" id="hidden">
+            <i class="fas fa-landmark"></i> Cultural
+          </button>
+          <button class="filter-btn" data-filter="resort">
+            <i class="fas fa-hotel"></i> Resorts
+          </button>
+          <button class="filter-btn" data-filter="religious">
+            <i class="fas fa-place-of-worship"></i> Religious
+          </button>
+          <button class="filter-btn" data-filter="nature">
+            <i class="fa fa-tree"></i> Natures
+          </button>
+          <button class="filter-btn" data-filter="festival">
+            <i class="fas fa-mask"></i> Festivals
+          </button>
+          <button class="filter-btn" data-filter="restaurant">
+            <i class="fa-solid fa-utensils"></i> Restaurants
+          </button>
+        </div>
+
+        <div class="municipalities-grid">
+          <!-- Municipality 1 -->
+          <div
+            class="glass-card municipality-card"
+            onclick="openSpotModal('Tayabas Basilica', 'Tayabas City', 'The Minor Basilica of St. Michael the Archangel is the largest Catholic church in Quezon Province. Built in the Spanish era, its key-shaped layout and Baroque-style design attract history buffs and pilgrims alike.', 'basilica')"
+            data-filter="religious"
+          >
+            <div class="card-image">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Tayabas_Basilica.jpg/960px-Tayabas_Basilica.jpg" alt="Tayabas Basilica" />
+              <div class="spot-name">Tayabas Basilica</div>
+            </div>
+            <div>
+              <div class="municipality-name"><i class="fas fa-map-marker-alt"></i> Tayabas City</div>
+              <p>Historic Spanish-era church with unique key-shaped layout</p>
+            </div>
+          </div>
+
+          <!-- Municipality 2 -->
+          <div
+            class="glass-card municipality-card"
+            onclick="openSpotModal('Kamay ni Hesus Shrine', 'Lucban', 'The Kamay ni Hesus Shrine is a popular pilgrimage site featuring a 50-foot statue of the Ascending Christ. Visitors can climb the 300+ steps to reach the statue while praying the Stations of the Cross along the way.', 'kamay')"
+            data-filter="religious"
+          >
+            <div class="card-image">
+              <img
+                src="https://files01.pna.gov.ph/source/2022/05/14/image20220514130650.jpg"
+                alt="Kamay ni Hesus"
+              />
+              <div class="spot-name">Kamay ni Hesus</div>
+            </div>
+            <div>
+              <div class="municipality-name">
+                <i class="fas fa-map-marker-alt"></i> Lucban
+              </div>
+              <p>
+                Renowned pilgrimage site with 50-foot Ascending Christ statue
+              </p>
+            </div>
+          </div>
+
+          <!-- Municipality 3 -->
+          <div
+            class="glass-card municipality-card"
+            onclick="openSpotModal('Villa Escudero', 'Tiaon', 'Villa Escudero is a coconut plantation turned resort that offers a unique cultural experience. Visitors can enjoy the famous waterfall restaurant, museum, and cultural shows showcasing Filipino traditions.', 'villa')"
+            data-filter="resort"
+          >
+            <div class="card-image">
+              <img
+                src="https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1295,h_862/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/xifwfxmghf8vedlioyep/VillaEscuderoResortTourfromManila.jpg"
+                alt="Villa Escudero"
+              />
+              <div class="spot-name">Villa Escudero</div>
+            </div>
+            <div>
+              <div class="municipality-name">
+                <i class="fas fa-map-marker-alt"></i> Tiaong
+              </div>
+              <p>Unique coconut plantation resort with waterfall dining</p>
+            </div>
+          </div>
+
+          <!-- Municipality 4 -->
+          <div
+            class="glass-card municipality-card"
+            onclick="openSpotModal('Sariaya Heritage Houses', 'Sariaya', 'Sariaya is known for its well-preserved heritage houses from the Spanish and American periods. These ancestral homes showcase grand architecture and are now being promoted for heritage tourism.', 'sariaya')"
+            data-filter="cultural"
+          >
+            <div class="card-image">
+              <img
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRKHrSx55rzL_cryzH-V_guSHVZk_d_kTBmKrOyb2zdHoBeAhDSMD9Wc9pc5Why6Z8XRmj5cnmn1uoksm3ci-BPppM5_fCdrtP81U0h0W29AIYz7B3j05pepJTvHW598YSX2SR-wyts3g3/s1600/Natalio+Marquez+Mansion.JPG"
+                alt="Sariaya Heritage"
+              />
+              <div class="spot-name">Sariaya Heritage Houses</div>
+            </div>
+            <div>
+              <div class="municipality-name">
+                <i class="fas fa-map-marker-alt"></i> Sariaya
+              </div>
+              <p>Ancestral homes with stunning Spanish-era architecture</p>
+            </div>
+          </div>
+
+          <!-- Municipality 5 -->
+          <div
+            class="glass-card municipality-card"
+            onclick="openSpotModal('Kwebang Lampas', 'Pagbilao', 'Kwebang Lampas, also known as Puting Buhangin, is a scenic white sand beach with a cave nestled by limestone formations. It offers crystal-clear water, camping spots, and dramatic sunsets.', 'pagbilao')"
+            data-filter="beach"
+          >
+            <div class="card-image">
+              <img
+                src="https://httpvisitquezontourist.wordpress.com/wp-content/uploads/2017/02/kwebang-lampas.jpg"
+                alt="Kwebang Lampas"
+              />
+              <div class="spot-name">Kwebang Lampas</div>
+            </div>
+            <div>
+              <div class="municipality-name">
+                <i class="fas fa-map-marker-alt"></i> Pagbilao
+              </div>
+              <p>White sand beach with a natural sea cave</p>
+            </div>
+          </div>
+
+          <!-- Municipality 6 -->
+          <div
+            class="glass-card municipality-card"
+            onclick="openSpotModal('Cagbalete Island', 'Mauban', 'Cagbalete Island is a serene destination known for its low-tide sandbars and unique biodiversity. Its perfect for beach lovers, birdwatchers, and those seeking quiet getaways.', 'mauban')"
+            data-filter="beach"
+          >
+            <div class="card-image">
+              <img
+                src="https://travelphotolab.com/wp-content/uploads/2015/04/cagbalete_dsc_0066.jpg"
+                alt="Cagbalete Island"
+              />
+              <div class="spot-name">Cagbalete Island</div>
+            </div>
+            <div>
+              <div class="municipality-name">
+                <i class="fas fa-map-marker-alt"></i> Mauban
+              </div>
+              <p>Peaceful island with sandbars and marine life</p>
+            </div>
+          </div>
+
+          <!-- Municipality 7 -->
+          <div
+            class="glass-card municipality-card"
+            onclick="openSpotModal('Quezon National Forest Park', 'Atimonan', 'This protected area is popular for scenic mountain views, nature trails, and the zigzag road called Bitukang Manok. It’s ideal for hiking and eco-tourism.', 'atimonan')"
+            data-filter="nature"
+          >
+            <div class="card-image">
+              <img
+                src="https://i.ytimg.com/vi/Y1sf431Zvlw/maxresdefault.jpg"
+                alt="Bitukang Manok"
+              />
+              <div class="spot-name">Quezon National Forest Park</div>
+            </div>
+            <div>
+              <div class="municipality-name">
+                <i class="fas fa-map-marker-alt"></i> Atimonan
+              </div>
+              <p>Eco-park with mountain trails and forest views</p>
+            </div>
+          </div>
+
+          <!-- Municipality 8 -->
+          <div
+            class="glass-card municipality-card"
+            onclick="openSpotModal('Kakawayan Falls', 'Infanta', 'Kakawayan Falls is a multi-tiered cascade tucked within a lush rainforest. Its cool pools and cliff-jumping spots make it a refreshing escape for adventurers.', 'balagbag')"
+            data-filter="nature"
+          >
+            <div class="card-image">
+              <img
+                src="https://i.ytimg.com/vi/6Afx__cHSFE/maxresdefault.jpg"
+                alt="Kakawayan Falls"
+              />
+              <div class="spot-name">Kakawayan Falls</div>
+            </div>
+            <div>
+              <div class="municipality-name">
+                <i class="fas fa-map-marker-alt"></i> Infanta
+              </div>
+              <p>Multi-tiered waterfall with natural swimming pools</p>
+            </div>
+          </div>
+
+          <!-- Municipality 9 -->
+          <div
+            class="glass-card municipality-card"
+            onclick="openSpotModal('Tignoan Beach and Surfing Area', 'Real', 'Tignoan Beach is renowned for consistent Pacific swells, making it a top surfing spot. The wide shoreline and laid-back atmosphere attract both surfers and sunbathers.', 'tignoan')"
+            data-filter="beach"
+          >
+            <div class="card-image">
+              <img
+                src="https://images.squarespace-cdn.com/content/v1/5fa1522044bdda192713063c/1615104550713-ZOO574FEJJWBXXB4GH9A/Real%2C+Quezon"
+                alt="Tignoan Beach"
+              />
+              <div class="spot-name">Tignoan Beach</div>
+            </div>
+            <div>
+              <div class="municipality-name">
+                <i class="fas fa-map-marker-alt"></i> Real
+              </div>
+              <p>Pacific-facing beach famous for surfing</p>
+            </div>
+          </div>
+
+          <!-- Municipality 10 -->
+          <div
+            class="glass-card municipality-card"
+            onclick="openSpotModal('Borawan Island', 'Padre Burgos', 'Called “Borawan” for its Boracay-like white sands and Palawan-style limestone formations, this island offers snorkeling, cliff views, and secluded coves.', 'borawan')"
+            data-filter="beach"
+          >
+            <div class="card-image">
+              <img
+                src="https://img.cocotel.com/frontend/hotels/4/borawan-beach-resort-by-cocotel-g585.jpg"
+                alt="Borawan Island"
+              />
+              <div class="spot-name">Borawan Island</div>
+            </div>
+            <div>
+              <div class="municipality-name">
+                <i class="fas fa-map-marker-alt"></i> Padre Burgos
+              </div>
+              <p>Island with white sand and limestone cliffs</p>
+            </div>
+          </div>
+
+          <!-- Municipality 11 -->
+          <div
+            class="glass-card municipality-card"
+            onclick="openSpotModal('Alibijaban Island', 'San Andres', 'Alibijaban Island is a hidden gem off the coast of San Narciso, Quezon. Known for its powdery white sand, crystal-clear waters, and lush mangrove forest, the island is perfect for eco-tourism, snorkeling, and beach camping. It’s a tranquil paradise ideal for those seeking peace and nature.', 'aluyon')"
+            data-filter="nature"
+          >
+            <div class="card-image">
+              <img
+                src="https://lakbaypinas.com/wp-content/uploads/2024/10/Snapinsta.app_52803978_335471207070425_9086100676083989163_n_1080.jpg"
+                alt="Alibijaban Island"
+              />
+              <div class="spot-name">Alibijaban Island</div>
+            </div>
+            <div>
+              <div class="municipality-name">
+                <i class="fas fa-map-marker-alt"></i> San Andres
+              </div>
+              <p>Pristine island with white sand beaches and mangrove forests</p>
+            </div>
+          </div>
+
+          <!-- Municipality 12 -->
+          <div
+            class="glass-card municipality-card"
+            onclick="openSpotModal('Magsaysay View Deck', 'General Nakar', 'Perched atop a hill, the Magsaysay View Deck offers sweeping vistas of the Sierra Madre range and Cocoy River valley. Sunset here is particularly spectacular.', 'magsaysay')"
+            data-filter="mountain"
+          >
+            <div class="card-image">
+              <img
+                src="https://highlandreflections.com/wp-content/uploads/2021/06/img20210627141335.jpg?w=1024"
+                alt="Magsaysay View Deck"
+              />
+              <div class="spot-name">Magsaysay View Deck</div>
+            </div>
+            <div>
+              <div class="municipality-name">
+                <i class="fas fa-map-marker-alt"></i> General Nakar
+              </div>
+              <p>Hilltop lookout with panoramic mountain views</p>
+            </div>
+          </div>
+
+          <!-- Municipality 13 -->
+          <div
+            class="glass-card municipality-card"
+            onclick="openSpotModal('Buyaburin Falls', 'Buenavista', 'A hidden gem nestled in Barangay Buenavista, within the municipality of Buenavista, Quezon. This picturesque waterfall is celebrated for its clear, cascading waters and distinctive rock formations, making it a tranquil retreat for nature enthusiasts and adventure seekers alike.', 'tayawan')"
+            data-filter="nature"
+          >
+            <div class="card-image">
+              <img
+                src="https://scontent.fmnl13-3.fna.fbcdn.net/v/t1.6435-9/126159911_3493400384085719_5661298754149664542_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeF_rl9J_1Iymkw5FOIDjhgoFcD8fIjOqyMVwPx8iM6rI_SD6-1V07rEgyQMvJq6ioPdnS1aKSKjF1mC94TpKTE0&_nc_ohc=KDUIahyeK6UQ7kNvwEKjQJC&_nc_oc=AdkvFExQJ1UMHomV4xtfwaA4LxyFFdLdQ2JpiGqcwRniiakwi7vGF7no58co6Z6-LgjqmNzgNsf3gFWEzATM_FPc&_nc_zt=23&_nc_ht=scontent.fmnl13-3.fna&_nc_gid=trkeJkhZzQ0n0kXm26HUTQ&oh=00_AfK526pM8wRcGrJ8x4rQR7-u6jOUeX3g4fxfz4LAyn81IQ&oe=684957C6"
+                alt="Buyaburin"
+              />
+              <div class="spot-name">Buyaburin Falls</div>
+            </div>
+            <div>
+              <div class="municipality-name">
+                <i class="fas fa-map-marker-alt"></i> Buenavista
+              </div>
+              <p>Waterfall with clear, cascading and unique rock formations</p>
+            </div>
+          </div>
+
+          <!-- Municipality 14 -->
+          <div
+            class="glass-card municipality-card"
+            onclick="openSpotModal('Luminous Cross of Grace Sanctuary', 'Agdangan', 'The Luminous Cross of Grace Sanctuary is a spiritual landmark in Agdangan. This sanctuary is known for its peaceful ambiance and the prominent illuminated cross that stands as a beacon of faith for locals and visitors alike. Its an ideal place for reflection and offers a panoramic view of the surrounding area. ', 'digman')"
+            data-filter="religious"
+          >
+            <div class="card-image">
+              <img
+                src="https://quezonarchitectures.wordpress.com/wp-content/uploads/2017/10/u.jpg?w=500"
+                alt="Luminous Cross of Grace Sanctuary"
+              />
+              <div class="spot-name">Luminous Cross of Grace Sanctuary</div>
+            </div>
+            <div>
+              <div class="municipality-name">
+                <i class="fas fa-map-marker-alt"></i> Agdangan
+              </div>
+              <p>A serene pilgrimage site featuring a towering illuminated cross</p>
+            </div>
+          </div>
+
+          <!-- Municipality 15 -->
+          <div
+            class="glass-card municipality-card"
+            onclick="openSpotModal('Pulong Bato (Rock Island)', 'Alabat', 'Pulong Bato, meaning Rock Island, is a notable landmark on the eastern side of Alabat Island. This large sea stack stands out against the ocean backdrop and is best visited during low tide for closer exploration.', 'salibungot')"
+            data-filter="beach"
+          >
+            <div class="card-image">
+              <img
+                src="https://image.vigattin.com/box/optimize/86/49_115523975895436393.jpg"
+                alt="Pulong Bato"
+              />
+              <div class="spot-name">Pulong Bato</div>
+            </div>
+            <div>
+              <div class="municipality-name">
+                <i class="fas fa-map-marker-alt"></i> Alabat
+              </div>
+              <p>A striking sea stack formation accessible during low tide.</p>
+            </div>
+          </div>
+
+          <!-- Municipality 16 -->
+          <div
+            class="glass-card municipality-card"
+            onclick="openSpotModal('Catanauan Cove', 'Catanauan', 'Located in Sitio Paraiso, Barangay Cutcutan, Catanauan Cove is a world-class beach and residential resort. Its expansive white sand beach provides a tranquil setting for relaxation and water activities. The resort is approximately 240 kilometers south of Manila and can be reached in 4 to 5 hours by private vehicle. ', 'catanauan')"
+            data-filter="resort"
+          >
+            <div class="card-image">
+              <img
+                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/30/ac/32/catanauan-cove.jpg?w=700&h=-1&s=1"
+                alt="Catanauan River"
+              />
+              <div class="spot-name">Catanauan Cove</div>
+            </div>
+            <div>
+              <div class="municipality-name">
+                <i class="fas fa-map-marker-alt"></i> Catanauan
+              </div>
+              <p>A 12-hectare white sand beach resort offering serene coastal experiences.</p>
+            </div>
+          </div>
+
+          <!-- Municipality 17 -->
+          <div
+            class="glass-card municipality-card"
+            onclick="openSpotModal('Mount Banahaw', 'Dolores', 'A sacred mountain revered by many, Mount Banahaw stands at 2,169 meters and is part of the Mounts Banahaw–San Cristobal Protected Landscape. Its a popular pilgrimage site, especially during Holy Week, attracting devotees who seek spiritual enlightenment. The mountain is also known for its biodiversity and is a haven for hikers and nature enthusiasts.', 'pundakit')"
+            data-filter="mountain"
+          >
+            <div class="card-image">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Mt._Banahaw_of_Lucban%2C_Quezon.jpg"
+                alt="Mount Banahaw"
+              />
+              <div class="spot-name">Mount Banahaw</div>
+            </div>
+            <div>
+              <div class="municipality-name">
+                <i class="fas fa-map-marker-alt"></i> Dolores
+              </div>
+              <p>The mountain is also known for its biodiversity and is a haven for hikers and nature enthusiasts.</p>
+            </div>
+          </div>
+
+            <!-- Municipality 18 -->
+            <div
+              class="glass-card municipality-card"
+              onclick="openSpotModal('Mangrove Boardwalk', 'Guinayangan', 'A captivating eco-tourism destination that showcases the rich biodiversity and ecological importance of the regions mangrove forests.', 'paripao')"
+              data-filter="nature"
+            >
+              <div class="card-image">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcZeIVzBWoKNooNk4QIaoMAMqxcsbVVBFxta7LrWrVbhIsBu4ULw&s=10&ec=72940545"
+                  alt="Mangrove Boardwalk"
+                />
+                <div class="spot-name">Mangrove Boardwalk</div>
+              </div>
+              <div>
+                <div class="municipality-name">
+                  <i class="fas fa-map-marker-alt"></i> Guinayangan
+                </div>
+                <p>Night boat tours to see river fireflies</p>
+              </div>
+            </div>
+
+            <!-- Municipality 19 -->
+            <div
+              class="glass-card municipality-card"
+              onclick="openSpotModal('Kamhantik Archaeological Site', 'Mulanay', 'Situated within the Buenavista Protected Landscape, the Kamhantik site features limestone tombs dating back to the 10th–14th century. These tombs are believed to be the burial sites of ancient Tagalog nobility. The area is also considered a sacred site by locals, rich in cultural and historical significance.', 'yumbak')"
+              data-filter="cultural"
+            >
+              <div class="card-image">
+                <img
+                  src="https://www.thehistoryblog.com/wp-content/uploads/2012/09/limestone-coffin-2.jpg"
+                  alt="Kamhantik Archaeological Site"
+                />
+                <div class="spot-name">Kamhantik Archaeological Site</div>
+              </div>
+              <div>
+                <div class="municipality-name">
+                  <i class="fas fa-map-marker-alt"></i> Mulanay
+                </div>
+                <p>These tombs are believed to be the burial sites of ancient Tagalog nobility.</p>
+              </div>
+            </div>
+
+            <!-- Municipality 20 -->
+            <div
+              class="glass-card municipality-card"
+              onclick="openSpotModal('Burdeos Island', 'Polillo', 'Part of the Polillo group, Burdeos Island boasts white sand beaches, vibrant coral reefs, and occasional sightings of monkey troops in its interior forests.', 'burdeos')"
+              data-filter="beach"
+            >
+              <div class="card-image">
+                <img
+                  src="https://64.media.tumblr.com/77cc45ac6b55a52a3794e3878e92e62c/tumblr_inline_p9lfy7JtWU1r15eo6_1280.jpg"
+                  alt="Burdeos Island"
+                />
+                <div class="spot-name">Burdeos Island</div>
+              </div>
+              <div>
+                <div class="municipality-name">
+                  <i class="fas fa-map-marker-alt"></i> Polillo
+                </div>
+                <p>Island haven with coral reefs and white sands</p>
+              </div>
+            </div>
+
+            <!-- Municipality 21 -->
+            <div
+              class="glass-card municipality-card"
+              onclick="openSpotModal('Perez Park', 'Lucena City', 'Perez Park is a central urban park in Lucena City, offering green spaces, a playground, and a venue for community events and leisure activities.', 'perez')"
+              data-filter="urban"
+            >
+              <div class="card-image">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Quezon_Provincial_Capitol%2C_Perez_Park_%28Quezon_Avenue%2C_Lucena%2C_Quezon%3B_10-09-2022%29.jpg/1280px-Quezon_Provincial_Capitol%2C_Perez_Park_%28Quezon_Avenue%2C_Lucena%2C_Quezon%3B_10-09-2022%29.jpg" alt="Perez Park" />
+                <div class="spot-name">Perez Park</div>
+              </div>
+              <div>
+                <div class="municipality-name">
+                  <i class="fas fa-map-marker-alt"></i> Lucena City
+                </div>
+                <p>
+                  Central park offering green spaces and community events
+                </p>
+              </div>
+            </div>
+
+            <!-- Municipality 22 -->
+            <div
+              class="glass-card municipality-card"
+              onclick="openSpotModal('Pulong Pasig', 'Calauag', 'Pulong Pasig is a serene island destination in Calauag, known for its white sandy beaches and clear waters, ideal for relaxation and beach activities.', 'pulong')"
+              data-filter="beach"
+            >
+              <div class="card-image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHjuV1g9mO02SpSVMwn1uSu2CTnmsXumWqsDg1B2akHw&s&ec=72940545" alt="Pulong Pasig" />
+                <div class="spot-name">Pulong Pasig</div>
+              </div>
+              <div>
+                <div class="municipality-name">
+                  <i class="fas fa-map-marker-alt"></i> Calauag
+                </div>
+                <p>
+                  Serene island with white sandy beaches
+                </p>
+              </div>
+            </div>
+
+            <!-- Municipality 23 -->
+            <div
+              class="glass-card municipality-card"
+              onclick="openSpotModal('Candle Festival', 'Candelaria', 'The Candle Festival in Candelaria is a vibrant celebration featuring candle-lit processions, cultural performances, and community gatherings.', 'candle')"
+              data-filter="festival"
+            >
+              <div class="card-image">
+                <img src="https://live.staticflickr.com/7719/16657714494_35ba2fc383_b.jpg" alt="Candle Festival" />
+                <div class="spot-name">Candle Festival</div>
+              </div>
+              <div>
+                <div class="municipality-name">
+                  <i class="fas fa-map-marker-alt"></i> Candelaria
+                </div>
+                <p>
+                  Vibrant festival featuring candle-lit processions
+                </p>
+              </div>
+            </div>
+
+            <!-- Municipality 24 -->
+            <div
+              class="glass-card municipality-card"
+              onclick="openSpotModal('Pamaypayan Festival', 'Lopez', 'Pamaypayan Festival is a cultural event in Lopez celebrating local crafts, particularly handwoven fans, with parades and exhibits.', 'pamaypayan')"
+              data-filter="cultural"
+            >
+              <div class="card-image">
+                <img src="https://whatmakeupcandotcom.wordpress.com/wp-content/uploads/2019/05/received_4184515122895088386756776779376275.jpeg?w=1100" alt="Pamaypayan Festival" />
+                <div class="spot-name">Pamaypayan Festival</div>
+              </div>
+              <div>
+                <div class="municipality-name">
+                  <i class="fas fa-map-marker-alt"></i> Lopez
+                </div>
+                <p>
+                  Cultural festival celebrating handwoven crafts
+                </p>
+              </div>
+            </div>
+
+            <!-- Municipality 25 -->
+            <div
+              class="glass-card municipality-card"
+              onclick="openSpotModal('Araña\'t Baluarte Festival', 'Gumaca', 'Araña\'t Baluarte Festival in Gumaca showcases decorated balconies and arches with agricultural products, reflecting the town\'s gratitude for bountiful harvests.', 'arana')"
+              data-filter="festival"
+            >
+              <div class="card-image">
+                <img src="https://luckwhatcha.wordpress.com/wp-content/uploads/2015/05/blog17.jpg" alt="Araña't Baluarte Festival" />
+                <div class="spot-name">Araña't Baluarte Festival</div>
+              </div>
+              <div>
+                <div class="municipality-name">
+                  <i class="fas fa-map-marker-alt"></i> Gumaca
+                </div>
+                <p>
+                  Festival featuring decorated arches with harvest displays
+                </p>
+              </div>
+            </div>
+
+            <!-- Municipality 26 -->
+            <div
+              class="glass-card municipality-card"
+              onclick="openSpotModal('Mt. Banahaw Trail', 'Sampaloc', 'The Mt. Banahaw Trail in Sampaloc offers hikers a spiritual journey through lush forests leading to sacred sites and panoramic views.', 'banahaw')"
+              data-filter="mountain"
+            >
+              <div class="card-image">
+                <img src="https://lh5.googleusercontent.com/proxy/ZI3zFoOcwjjvRvjUMhVvDf5iOdGHY4bGlExTwv2PVvc1J950wQkw4AMIhRwvQu_kqFEH5b1K30GEya460uFUnzOGwzbTDEAaXB_WiJD3uxcDbD1AebLFSgMNZ47p-nJ3JRBeiu9_OSj9S-BHfEK28UQXhiDsVyAur2Wpn1ltrWzD40l_0xzbzFOL" alt="Mt. Banahaw Trail" />
+                <div class="spot-name">Mt. Banahaw Trail</div>
+              </div>
+              <div>
+                <div class="municipality-name">
+                  <i class="fas fa-map-marker-alt"></i> Sampaloc
+                </div>
+                <p>
+                  Spiritual hiking trail through sacred sites
+                </p>
+              </div>
+            </div>
+
+            <!-- Municipality 27 -->
+            <div
+              class="glass-card municipality-card"
+              onclick="openSpotModal('Maisan Festival', 'San Andres', 'Maisan Festival celebrates the corn harvest in San Andres with colorful parades, street dances, and agricultural exhibits.', 'maisan')"
+              data-filter="festival"
+            >
+              <div class="card-image">
+                <img src="https://scontent.fcgy1-3.fna.fbcdn.net/v/t1.6435-9/36053092_1747531128672662_6766926192680370176_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHxi0mF5VPZwu2iFGpxpFMzyb7lQiGKVuvJvuVCIYpW68IHjUoQDIuD3GiSR6KIysOQwtaoSmH1LKTmvqKJpDKm&_nc_ohc=A4meiQeyBzYQ7kNvwFWurmL&_nc_oc=Adl6NlDvR-W-D0W_oNVd4UntTMzt4jS_fdWUftsIqHgWQyFACFfbFnksyYxqcIeoUemaMRJvM4BX-3P-rywz_wr_&_nc_zt=23&_nc_ht=scontent.fcgy1-3.fna&_nc_gid=YIgGCpkqofAb0ebBHXofxg&oh=00_AfKWR54A1aTEqZ7UAKMD4F5K9rLHPT-RPUPYRV1wJHi3xw&oe=684966C3" alt="Maisan Festival" />
+                <div class="spot-name">Maisan Festival</div>
+              </div>
+              <div>
+                <div class="municipality-name">
+                  <i class="fas fa-map-marker-alt"></i> San Andres
+                </div>
+                <p>
+                  Festival celebrating the corn harvest
+                </p>
+              </div>
+            </div>
+
+            <!-- Municipality 28 -->
+            <div
+              class="glass-card municipality-card"
+              onclick="openSpotModal('Miralles Farm & Resort', 'San Antonio', 'Miralles Farm & Resort offers a variety of recreational facilities, including a swimming pool, heated jacuzzi, kiddie pool, mini chapel, go-kart area, basketball and volleyball courts, billiard hall, coffee shop, and convenience store. It\'s a comprehensive destination for leisure and fun.', 'sanantonio')"
+              data-filter="resort"
+            >
+              <div class="card-image">
+                <img src="https://scontent.fmnl13-3.fna.fbcdn.net/v/t39.30808-6/476436877_933367512210370_3120505903437474078_n.jpg?stp=dst-jpg_p526x395_tt6&_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEpBNIbuH0SjWzWWa93VqRKpe2CjBU4-_ql7YKMFTj7-j8L0qfmDXNMDuWEHrMsCIi4QM8FOUuCpDjU5oJiHchY&_nc_ohc=mO8hPg4NdXsQ7kNvwGgUJuN&_nc_oc=AdkDPFZ8JcmiGZMVmZ3R_dElG-JJkjGnMFcyAAefb0NXNOeT-qOle2FftgCS_yiuUnQlhJFUABwiNnHHnQFKqwpn&_nc_zt=23&_nc_ht=scontent.fmnl13-3.fna&_nc_gid=PP72EgR3mUpk6HOaW8ZWIw&oh=00_AfIAOf-u-RvEpgiac_CyBcUjwANnJ9V3mxOu94AFHg412g&oe=6827C533" alt="San Antonio Beach" />
+                <div class="spot-name">Miralles Farm & Resort</div>
+              </div>
+              <div>
+                <div class="municipality-name">
+                  <i class="fas fa-map-marker-alt"></i> San Antonio
+                </div>
+                <p>
+                  Miralles Farm & Resort offers a variety of recreational facilities.
+                </p>
+              </div>
+            </div>
+
+            <!-- Municipality 29 -->
+            <div
+              class="glass-card municipality-card"
+              onclick="openSpotModal('San Pedro Apostol Parish Church', 'Unisan', 'San Pedro Apostol Parish Church is a historical landmark known for its Spanish-era architecture and significance in the town\'s religious heritage.', 'unisan')"
+              data-filter="religious"
+            >
+              <div class="card-image">
+                <img src="https://scontent.fcgy1-3.fna.fbcdn.net/v/t1.6435-9/151803570_266508594992323_2688046641195941149_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeHLgKPCjZD-Q2MIXVlwA5oK6egpM6eRqkTp6Ckzp5GqRKjD1CCYcIzojkE0GYBT_P4UbXjyVXifdPWq0fqtvTjS&_nc_ohc=kvxvT6j3RzMQ7kNvwHiFKpO&_nc_oc=Adm-sXqKRiBDUYUovwe6rb2OL-qbbjl2tP2AotMm5yoLYz2i2rsZvLueZWZyfCz8HULFhiyMMDjE4u81WQcXysVC&_nc_zt=23&_nc_ht=scontent.fcgy1-3.fna&_nc_gid=TMfBprD6zvN8oEUAOgDv2g&oh=00_AfJWTpJpgb0bvaxPq135W6lSbZb2KqLho-g7L4tQ_gnoHA&oe=684995CF" alt="Unisan Church" />
+                <div class="spot-name">San Pedro Apostol Parish Church</div>
+              </div>
+              <div>
+                <div class="municipality-name">
+                  <i class="fas fa-map-marker-alt"></i> Unisan
+                </div>
+                <p>
+                  Historical Spanish-era church
+                </p>
+              </div>
+            </div>
+
+            <!-- Municipality 30 -->
+            <div
+              class="glass-card municipality-card"
+              onclick="openSpotModal('Kitay Mangrove Forest Park', 'Tagkawayan', 'Mangrove forest park provides a serene environment where visitors can enjoy sandy shores and clear waters. ', 'malinao')"
+              data-filter="nature"
+            >
+              <div class="card-image">
+                <img src="https://scontent.fmnl13-3.fna.fbcdn.net/v/t39.30808-6/491425973_1252115263584816_4092205236386650166_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHjCiNWQvD7g0RjDVxJtywk0iqZ19fUwwvSKpnX19TDC0v0DhKZ0lY5TQKtoHgKrewcLoF1osJaRIDd6cxViAF0&_nc_ohc=44XCANgVSFEQ7kNvwHcKN88&_nc_oc=AdnmLMOZj20vuWS--TaiJ1xDKcQzy8gZgmY7vI3MV-h9mL2cmBQkLVoviFcX7CwEZCKUknnJ1gE4lxgmMSyjopzv&_nc_zt=23&_nc_ht=scontent.fmnl13-3.fna&_nc_gid=fkSFVRttCk9hd9Ks4DE0tg&oh=00_AfJZc2YlshMvZBLs4XWTUvHjotKI37xBcSjaZ2IZ_cG3og&oe=6827E57E" alt="Kitay Mangrove Forest Park" />
+                <div class="spot-name">Kitay Mangrove Forest Park</div>
+              </div>
+              <div>
+                <div class="municipality-name">
+                  <i class="fas fa-map-marker-alt"></i> Tagkawayan
+                </div>
+                <p>Natural spring with crystal-clear waters</p>
+              </div>
+            </div>
+
+            <!-- Municipality 31 -->
+           <div
+              class="glass-card municipality-card"
+              onclick="openSpotModal('Macalelon Church', 'Macalelon', 'The San Isidro Labrador Parish Church in Macalelon is a historic Spanish-era church with beautiful architecture.', 'macalelon')"
+              data-filter="religious"
+            >
+              <div class="card-image">
+                <img src="https://tse2.mm.bing.net/th/id/OIP.IELaab1Uuh3Y9rAnkaFvdgHaE7?cb=iwp2&rs=1&pid=ImgDetMain" alt="Macalelon Church" />
+                <div class="spot-name">Macalelon Church</div>
+              </div>
+              <div>
+                <div class="municipality-name">
+                  <i class="fas fa-map-marker-alt"></i> Macalelon
+                </div>
+                <p>Historic Spanish-era church</p>
+              </div>
+            </div>
+
+            <!-- Municipality 32 -->
+            <div
+              class="glass-card municipality-card"
+              onclick="openSpotModal('Lamon Bay', 'Plaridel', 'Plaridel\'s coastline along Lamon Bay features sandy beaches ideal for swimming and relaxation. The bay is known for its rich marine life and coral formations, making it a great spot for snorkeling and beachcombing.', 'lamon')"
+              data-filter="beach"
+            >
+              <div class="card-image">
+                <img src="https://www.beautyofthephilippines.com/wp-content/uploads/2018/01/Siain-Plaridel-Quezon-2009-12-28-2009-12-28-DSC_0601-marianosayno-marianosayno-768x510.jpg" />
+                <div class="spot-name">Lamon Bay</div>
+              </div>
+              <div>
+                <div class="municipality-name">
+                  <i class="fas fa-map-marker-alt"></i> Plaridel
+                </div>
+                <p>Plaridel's coastline along Lamon Bay features sandy beaches ideal for swimming and relaxation.</p>
+              </div>
+            </div>
+
+            <!-- Municipality 33 -->
+            <div
+              class="glass-card municipality-card"
+              onclick="openSpotModal('San Francisco Church', 'San Francisco', 'The San Francisco de Asis Parish Church is a historic church known for its beautiful facade and religious significance.', 'sanfrancisco')"
+              data-filter="religious"
+            >
+              <div class="card-image">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjD5t1edbLewGGXDFQ9F_1teWvpv12qfVtcF30Oo7zwYdqX-dX1Do3kw8nAzWMG23xWitRKOs8vUZydhgDFAvbMgmWIwrgCaRlLf5m2_mSgSvFk2rjy8QfLbJiRkMDgitQjuL3gZMI6tNmDdNXEoM7NYuzGuUIE45LtyIdSLDoDOi2Jlo2_ou3ECsXpRTs/s960/St.%20Francis%20of%20Assisi%20Parish%20-%20San%20Francisco,%20Quezon.jpg" alt="San Francisco Church" />
+                <div class="spot-name">San Francisco Church</div>
+              </div>
+              <div>
+                <div class="municipality-name">
+                  <i class="fas fa-map-marker-alt"></i> San Francisco
+                </div>
+                <p>Historic church with beautiful architecture</p>
+              </div>
+            </div>
+
+            <!-- Municipality 34 -->
+            <div
+              class="glass-card municipality-card"
+              onclick="openSpotModal('Pitogo Beach', 'Pitogo', 'Pitogo Beach offers a long stretch of shoreline with gray sand and calm waters, perfect for family outings.', 'pitogo')"
+              data-filter="beach"
+            >
+              <div class="card-image">
+                <img src="https://pitogoquezon.gov-ph.net/wp-content/uploads/2020/12/beach1-2-2-2.jpg" alt="Pitogo Beach" />
+                <div class="spot-name">Pitogo Beach</div>
+              </div>
+              <div>
+                <div class="municipality-name">
+                  <i class="fas fa-map-marker-alt"></i> Pitogo
+                </div>
+                <p>Long shoreline with calm waters</p>
+              </div>
+            </div>
+
+            <!-- Municipality 35 -->
+            <div
+              class="glass-card municipality-card"
+              onclick="openSpotModal('San Narciso Beach', 'San Narciso', 'San Narciso Beach features a long stretch of gray sand and gentle waves, ideal for swimming and relaxation.', 'sannarciso')"
+              data-filter="beach"
+            >
+              <div class="card-image">
+                <img src="https://forshtravel.com/wp-content/uploads/2023/05/image4-1024x768.jpeg" alt="San Narciso Beach" />
+                <div class="spot-name">San Narciso Beach</div>
+              </div>
+              <div>
+                <div class="municipality-name">
+                  <i class="fas fa-map-marker-alt"></i> San Narciso
+                </div>
+                <p>Long beach with gentle waves</p>
+              </div>
+            </div>
+
+            <!-- Municipality 36 -->
+            <div
+              class="glass-card municipality-card"
+              onclick="openSpotModal('Panukulan River ', 'Panukulan', 'The PanukulanRiver offers scenic boat rides through mangrove forests and fishing villages.', 'sanjuans')"
+              data-filter="nature"
+            >
+              <div class="card-image">
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/99/33/b1/caption.jpg?w=400&h=-1&s=1" alt="Panukulan River" />
+                <div class="spot-name">Panukulan River</div> 
+              </div>
+              <div>
+                <div class="municipality-name">
+                  <i class="fas fa-map-marker-alt"></i> Panukulan
+                </div>
+                <p>Scenic river with mangrove forests</p>
+              </div>
+            </div>
+
+            <!-- Municipality 37 -->
+            <div
+              class="glass-card municipality-card"
+              onclick="openSpotModal('Pulongkukok Island', 'Pollilio Quezon', 'Pulongkukok Island is a small island paradise with white sand beaches and excellent snorkeling spots.', 'pandan')"
+              data-filter="beach"
+            >
+              <div class="card-image">
+                <img src="https://i0.wp.com/polillotravelers.wordpress.com/wp-content/uploads/2016/03/image11.jpg?w=2500&h=&ssl=1" alt="Pulongkukok Island" />
+                <div class="spot-name">Pulongkukok Island</div>
+              </div>
+              <div>
+                <div class="municipality-name">
+                  <i class="fas fa-map-marker-alt"></i> Pollilio
+                </div>
+                <p>Island paradise with white sand beaches</p>
+              </div>
+            </div>
+
+            <!-- Municipality 40 - Patnanungan Island -->
+            <div
+              class="glass-card municipality-card"
+              onclick="openSpotModal('Patnanungan Island', 'Patnanungan', 'Patnanungan Island is a remote paradise with pristine beaches and a peaceful fishing village atmosphere, offering an authentic island experience.', 'patnanungan')"
+              data-filter="beach"
+            >
+              <div class="card-image">
+                <img src="https://i.vimeocdn.com/video/1475383998-6d78ec7c3f9cb3e5e272c44af003afb77521fdb4ad1ab390d255e71b0dc3d567-d?f=webp" alt="Patnanungan Island" />
+                <div class="spot-name">Patnanungan Island</div>
+              </div>
+              <div>
+                <div class="municipality-name">
+                  <i class="fas fa-map-marker-alt"></i> Patnanungan
+                </div>
+                <p>Remote island with pristine beaches</p>
+              </div>
+            </div>
+
+            <!-- Municipality 41 - Jomalig Island -->
+            <div
+              class="glass-card municipality-card"
+              onclick="openSpotModal('Jomalig Island', 'Jomalig', 'Jomalig Island is known for its golden sand beaches, crystal-clear waters, and laid-back island vibe, perfect for off-the-beaten-path travelers.', 'jomalig')"
+              data-filter="beach"
+            >
+              <div class="card-image">
+                <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/604067807.jpg?k=781fd60f9a3f539efc43133f4ccdd606ebe7627445451d435e85447041a01a04&o=&hp=1" alt="Jomalig Island" />
+                <div class="spot-name">Jomalig Island</div>
+              </div>
+              <div>
+                <div class="municipality-name">
+                  <i class="fas fa-map-marker-alt"></i> Jomalig
+                </div>
+                <p>Golden sand beaches with crystal-clear waters</p>
+              </div>
+            </div>
+
+            <!-- Additional 1 -->
+            <div
+              class="glass-card municipality-card"
+              onclick="openSpotModal('Kamayan sa Palaisdaan', 'Tayabas City', 'Kamayan sa Palaisdaan is renowned for its floating bamboo huts where guests can enjoy traditional Filipino meals amidst a tranquil fishpond environment. The restaurant provides a rustic dining experience, making it a must-visit for both locals and tourists.', 'kamayan')"
+              data-filter="restaurant"
+            >
+              <div class="card-image">
+                <img src="https://www.taraletsanywhere.com/wp-content/uploads/2019/05/kamayan-sa-palaisdaan-hotel-and-resort1-665x499.jpg" alt="Kamayan sa Palaisdaan" />
+                <div class="spot-name">Kamayan sa Palaisdaan</div>
+              </div>
+              <div>
+                <div class="municipality-name">
+                  <i class="fas fa-map-marker-alt"></i> Tayabas City
+                </div>
+                <p>A unique floating restaurant offering Filipino dishes in a serene, nature-inspired setting.</p>
+              </div>
+            </div>
+
+            <!-- Additional 2 -->
+            <div
+              class="glass-card municipality-card"
+              onclick="openSpotModal('Buddy\'s Restaurant', 'Lucban', 'Buddy\'s Restaurant in Lucban offers a lively dining experience with interiors adorned to celebrate the Pahiyas Festival. It\'s particularly known for serving authentic Pancit Lucban and Lucban longganisa, providing guests with a taste of the town\'s culinary heritage.', 'buddys')"
+              data-filter="restaurant"
+            >
+              <div class="card-image">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDhyfH9pOTaSG4iU-hX-TCHgixw9NXOrrAnsR4GqbVsoPMnPBBN4IHzVB2na_ndwBr9RqHimdOmYTn8Y_5p3xHCVhK3uMqibtNRrfWJ0g3vvrjaYMEedtcANTl6EF55-IG-uJCU5zMFI4/s1600/IMG_2910.JPG" alt="Buddy\'s Restaurant" />
+                <div class="spot-name">Buddy's Restaurant</div>
+              </div>
+              <div>
+                <div class="municipality-name">
+                  <i class="fas fa-map-marker-alt"></i> Lucban
+                </div>
+                <p>A vibrant eatery famous for its Pancit Lucban and festive ambiance reflecting local culture.</p>
+              </div>
+            </div>
+
+            <!-- Additional 3 -->
+            <div
+              class="glass-card municipality-card"
+              onclick="openSpotModal('Mt. Banahaw Viewdeck & Cabin', 'Sariaya', 'Mt. Banahaw Viewdeck & Cabin in Sariaya provides a unique dining experience where guests can savor meals made from fresh, locally grown ingredients while enjoying breathtaking views of Mt. Banahaw. The restaurant\'s menu features a variety of dishes, including the creamy and tender Rosemary Grilled Salmon, the savory Creamy Garlic Pepper Beef, and the flavorful Sisig Bangus. For dessert, patrons can indulge in Sinulbot, a traditional Quezon delicacy made of sticky rice and brown sugar syrup.', 'viewdeck')"
+              data-filter="restaurant"
+            >
+              <div class="card-image">
+                <img src="https://scontent.fmnl4-1.fna.fbcdn.net/v/t39.30808-6/476219779_636719948821654_119192523417941410_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=86c6b0&_nc_eui2=AeHR9LUDULqDEL2jgEm3AGdKhEK9ZiGgEwGEQr1mIaATAVu42cJ8R6MGwQWsjvsz4NftOdWW5WOmeFJsztwN2EQr&_nc_ohc=RzpuzJsmPoAQ7kNvwF_RzMK&_nc_oc=AdmVWdUf9jktEbgqUlTWrOXvF6zfrr72HVGUEiHqwlY83AB6nInxj6OGU733YWsWc5g&_nc_zt=23&_nc_ht=scontent.fmnl4-1.fna&_nc_gid=qCnhqooQgQfNZN4Ne2UaTg&oh=00_AfLIPk-cb29nBm2aqb6cWRBQt9ZE5oK1nO3UhfM4k1FZQA&oe=68434921" />
+                <div class="spot-name">Mt. Banahaw Viewdeck & Cabin</div>
+              </div>
+              <div>
+                <div class="municipality-name">
+                  <i class="fas fa-map-marker-alt"></i> Sariaya
+                </div>
+                <p>A scenic farm-to-table restaurant nestled at the foot of Mt. Banahaw, offering panoramic views and locally sourced dishes.</p>
+              </div>
+            </div>
+
+            <!-- Additional 4 -->
+            <div
+              class="glass-card municipality-card"
+              onclick="openSpotModal('Pahiyas Festival', 'Lucban', 'Held every May 15 in Lucban, the Pahiyas Festival is a vibrant celebration where homes are adorned with colorful “kiping” (leaf-shaped rice wafers), fruits, vegetables, and handicrafts. It honors the patron saint of farmers, San Isidro Labrador, and showcases Lucban\'s rich culture, creativity, and agricultural abundance. Visitors enjoy parades, local delicacies, and traditional music, making it one of the most iconic and visually stunning festivals in the Philippines.', 'pahiyasfestival')"
+              data-filter="festival"
+            >
+              <div class="card-image">
+                <img src="https://cdn-v2.theculturetrip.com/1200x675/wp-content/uploads/2018/03/8740291211_fdc2361254_k.webp" alt="Pahiyas Festival" />
+                <div class="spot-name">Pahiyas Festival</div>
+              </div>
+              <div>
+                <div class="municipality-name">
+                  <i class="fas fa-map-marker-alt"></i> Lucban
+                </div>
+                <p>Colorful harvest festival honoring San Isidro Labrador.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="see-more-container">
+          <button class="btn btn-outline see-more-btn" id="see-more">
+            See More <i class="fas fa-chevron-down"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI Chatbot Container -->
+    <section class="ai-assistant-section">
+      <div class="container">
+        <h1 class="section-title">Ask Our AI Tourist Assistant</h1>
+        <p class="section-subtitle">
+          Get personalized recommendations for your Quezon Province journey
+        </p>
+
+        <div class="ai-chat-container glass-card">
+          <div class="ai-chat-header">
+            <div class="ai-chat-title">
+              <i class="fas fa-robot"></i>
+              <h2>Quezon Travel Assistant</h2>
+              <span class="ai-badge">AI-Powered</span>
+            </div>
+            <button id="toggleChatbot" class="ai-chat-toggle">
+              <i class="fas fa-comment-dots"></i>
+            </button>
+          </div>
+
+          <div class="ai-chat-body">
+            <iframe
+              id="chatbotIframe"
+              src="https://www.chatbase.co/chatbot-iframe/UqXCf7xEtAf1MVOcRAI98"
+              style="border: none; width: 100%; height: 100%"
+            ></iframe>
+          </div>
+
+          <div class="ai-quick-questions">
+            <p>Try asking:</p>
+            <div class="question-chips">
+              <button class="question-chip">Best beaches in Quezon</button>
+              <button class="question-chip">Top cultural sites</button>
+              <button class="question-chip">Adventure activities</button>
+              <button class="question-chip">Local food to try</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Spot Detail Modal -->
+    <div class="modal" id="spotModal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 id="modalSpotTitle">Spot Name</h2>
+          <span class="close-modal" onclick="closeModal('spotModal')"
+            >&times;</span
+          >
+        </div>
+        <div class="modal-body">
+          <div class="spot-location" style="margin-bottom: 15px">
+            <i class="fas fa-map-marker-alt"></i>
+            <span id="modalSpotLocation">Location, Quezon</span>
+          </div>
+
+          <!-- Thumbnail Gallery -->
+          <div class="spot-gallery">
+            <!-- Thumbnails  -->
+          </div>
+
+          <!-- Lightbox Modal -->
+          <div id="imageLightbox" class="lightbox">
+            <span class="close-lightbox" onclick="closeLightbox()"
+              >&times;</span
+            >
+            <span class="fullscreen-btn" onclick="toggleFullscreen()">
+              <i class="fas fa-expand"></i>
+            </span>
+            <div class="lightbox-content">
+              <img id="lightboxImage" src="" alt="" />
+              <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+              <a class="next" onclick="changeImage(1)">&#10095;</a>
+            </div>
+          </div>
+
+          <div class="spot-description" id="modalSpotDescription">
+            Spot description will go here...
+          </div>
+
+          <div class="photo-credits">
+            <small>
+              <i class="fas fa-camera"></i> All photos belong to their respective owners. 
+              No copyright infringement intended. Used for educational/non-commercial purposes only.
+            </small>
+          </div>
+
+          <h3 style="margin-bottom: 15px">AI-Generated Features</h3>
+          <div class="spot-features">
+            <!-- Feature -->
+          </div>
+
+          <div style="margin-top: 30px">
+            <button class="btn btn-primary" style="width: 100%">
+              Book Vacation (Coming Soon)
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>THE JOURNEY.ai</h3>
+          <p>Revolutionizing tourism through artificial intelligence</p>
+          <div class="ai-badge">
+            <a href="https://www.chatbase.co/" target="_blank">
+              <i class="fas fa-brain"></i>
+              <span>Powered by Chatbase.co</span> 
+            </a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="HTML_Home.html#discover">Popular Destination</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="HTML_About.html#about" class="footer-link">About Us</a></li>
+            <li><a href="HTML_About.html#technology" class="footer-link">Our Technology</a></li>
+            <li><a href="HTML_About.html#careers" class="footer-link">Careers</a></li>
+            <li><a href="HTML_About.html#contact" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="HTML_Legal.html#privacy">Privacy Policy</a></li>
+            <li><a href="HTML_Legal.html#terms">Terms of Service</a></li>
+            <li><a href="HTML_Legal.html#cookies">Cookie Settings</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 THE JOURNEY.ai. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+        const spotData = {
+        basilica: {
+          features: [
+            { icon: "fa-church", text: "Religious Site" },
+            { icon: "fa-pray", text: "Pilgrimage" },
+            { icon: "fa-landmark", text: "Landmark" },
+            { icon: "fa-history", text: "Historical" }
+          ],
+          images: [
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Full_view_Minor_Basilica_of_St._Michael_the_Archangel_Tayabas_City.JPG/1280px-Full_view_Minor_Basilica_of_St._Michael_the_Archangel_Tayabas_City.JPG",
+            "https://church710.files.wordpress.com/2017/10/6288608585_1c32738264_b.jpg?w=825",
+            "https://simbyahero.com/wp-content/uploads/2024/05/Quezon-Tayabas-Minor-Basilica-of-St-Michael-the-Archangel-1600-01-1024x769.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Tayabas_Basilica_Interior.JPG/250px-Tayabas_Basilica_Interior.JPG",
+            "https://i0.wp.com/ajourneywithmeblog.com/wp-content/uploads/2020/10/20190607_132629.jpg",
+            "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgzASPWcN7gB8UBp-E8RfwhDO_KwCX4B17DSkqdvXxEFn9ejZMtLHI9vMOcE91WfWiZh88xrFa0jrti4ruPUBdEOU2H5zztLcTcWaFGmCuGfzdSHFzHu1N9rcH91G7Uvl3eG-gBRp7Wk1wC/s1600/tayabasBASILICA2.jpg"
+          ]
+        },
+        kamay: {
+          features: [
+            { icon: "fa-church", text: "Religious Site" },
+            { icon: "fa-hiking", text: "Climbing" },
+            { icon: "fa-pray", text: "Pilgrimage" },
+            { icon: "fa-landmark", text: "Landmark" }
+          ],
+          images: [
+            "https://thumbs.dreamstime.com/b/largest-statue-kamay-ni-hesus-lucban-quezon-province-philippines-large-statue-kamay-ni-hesus-115312055.jpg",
+            "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgrY4LyQpLOAXRhaIpO9L3UCN62sPaXpLegGRHfkdZ-WL1uJxOco6IVolctuIDE1V-8_DWfLdT-SFPupcBDELopuCxMIZYVeL8dmSCS0ylOcwAWQ6z7lRsUBePUCrbyWP7NPVj0yzYXb0w/s1600/geejay-travel-log-kamay-ni-hesus-lucban-quezon-05.jpg",
+            "https://www.vigattintourism.com/assets/tourist_spots_photos/optimize/13511363092iN0jJCY.jpg",
+            "https://live.staticflickr.com/2842/34033492685_c0e8f858a3_b.jpg",
+            "https://lakbaypinas.com/wp-content/uploads/2025/04/Snapins.ai_488839096_18493907152005474_451820496354928586_n_1080-1.jpg",
+            "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhwNTJiTtgZo69xYy1zSZDY6zBChBcO50wdQ3WMO6XQmwcmvZcHaDCDPqQ2pkgW4GLfxHYQherE8fS5D0fq4qUcK4UfXseFGQrHAw4hyphenhyphenMTqteXpMQfty1YWODj0gHmSGkZ6AtvAL2w7_OQ/s1600/IMG_1838.JPG"
+          ]
+        },
+        villa: {
+          features: [
+            { icon: "fa-utensils", text: "Dining" },
+            { icon: "fa-water", text: "Waterfall" },
+            { icon: "fa-hotel", text: "Resort" },
+            { icon: "fa-music", text: "Cultural Shows" },
+            { icon: "fa-tree", text: "Nature" }
+          ],
+          images: [
+            "https://media.tacdn.com/media/attractions-splice-spp-674x446/07/02/f2/4c.jpg",
+            "https://media.tacdn.com/media/attractions-splice-spp-674x446/06/75/bf/6d.jpg",
+            "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/0b/25/a2/89.jpg",
+            "https://images.gmanews.tv/webpics/2017/10/640_FullSizeRender_2017_10_18_16_48_19.jpg",
+            "https://i0.wp.com/1.bp.blogspot.com/-bsIeWGbN1HM/W_n5-5ejRBI/AAAAAAAADpI/pW7IP3uoQGA-jZbhhp_8ZZO5JwlxK8DOwCLcBGAs/s1600/Villa%2BEscudero%2B-%2BCalabarzon%2BHeritage%2BCaravan%2B6.JPG?ssl=1"
+          ]
+        },
+        sariaya: {
+          features: [
+            { icon: "fa-landmark", text: "Historical" },
+            { icon: "fa-home", text: "Heritage Houses" },
+            { icon: "fa-camera", text: "Photography" }
+          ],
+          images: [
+            "https://upload.wikimedia.org/wikipedia/commons/b/bd/Don_Catalino_Rodriguez_House_%28Daliz_Street%2C_Sariaya%2C_Quezon%3B_10-08-2022%29.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/7/79/Gala-Rodriguez_Heritage_House%2C_Sariaya%2C_Quezon%2C_Feb_2024.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/d/de/17_Religioso-De_Villa_Ancestral_House_Sariaya.JPG",
+            "https://i.pinimg.com/736x/5b/ae/c2/5baec2b7d8e1cace614b209a235d0e12.jpg",
+            "https://i.pinimg.com/736x/66/d9/a7/66d9a75634fcfed43f3dab93b36ba499.jpg",
+            "https://i.pinimg.com/736x/e8/25/25/e825255e05f06008a023c35eb735eb74.jpg"
+          ]
+        },
+        pagbilao: {
+          features: [
+            { icon: "fa-umbrella-beach", text: "Beach" },
+            { icon: "fa-water", text: "Clear Waters" },
+            { icon: "fa-campground", text: "Camping" },
+            { icon: "fa-mountain", text: "Limestone Formations" }
+          ],
+          images: [
+            "https://media-cdn.tripadvisor.com/media/photo-s/07/06/e4/4d/getlstd-property-photo.jpg",
+            "https://live.staticflickr.com/8799/17550400165_8782034986_b.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/c3/89/9a/received-1455880824429292.jpg",
+            "https://www.atbp.ph/wp-content/uploads/2016/05/img_572720e764589-696x443.png"
+          ]
+        },
+        mauban: {
+          features: [
+            { icon: "fa-umbrella-beach", text: "Beach" },
+            { icon: "fa-water", text: "Sandbars" },
+            { icon: "fa-binoculars", text: "Birdwatching" },
+            { icon: "fa-fish", text: "Marine Life" }
+          ],
+          images: [
+            "https://images.squarespace-cdn.com/content/v1/5fa1522044bdda192713063c/c81208f8-be9b-4435-98c6-e983391f3eb8/Sandbar+of+Cagbalete+Island",
+            "https://cdn.prod.website-files.com/5e182252b1025a15c98521cb/6021ed7ce60d7c44fc48e431_Cagbalete.jpg",
+            "https://www.vigattintourism.com/assets/article_main_photos/optimize/1352369458YmuDZFY7.jpg",
+            "https://thetorogichronicles.com/wp-content/uploads/2016/05/13148142_1004850016257779_1355238949_o-e1465360311606.jpg",
+            "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYWYtmyLEcfqVO1xwIrr77DPbtO_Z0jgjLPoqB4x2dV47_Wy3YuBGAUE3Tv_gdpVyOXhsxbqQKgyuyaerINPP9UnJOMMdddZd8THnLrEPIKFUFEOJFPLd_kGoARuNMGEppGz-tkre_i-dF/s1600/Cagbalete-2.jpg",
+            "https://i0.wp.com/kapampangantraveller.com/wp-content/uploads/2023/06/cagbalete-white-sand-beach-kapampangan-traveller.jpg?w=768&ssl=1"
+          ]
+        },
+        atimonan: {
+          features: [
+            { icon: "fa-tree", text: "Nature" },
+            { icon: "fa-hiking", text: "Hiking" },
+            { icon: "fa-road", text: "Scenic Drive" },
+            { icon: "fa-mountain", text: "Mountain Views" }
+          ],
+          images: [
+            "https://media-cdn.tripadvisor.com/media/photo-s/0a/73/68/24/get-a-chance-to-experience.jpg",
+            "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/a7/38/b3/the-quezon-national-park.jpg?w=900&h=500&s=1",
+            "https://scontent.fcgy1-1.fna.fbcdn.net/v/t1.6435-9/103142230_891365334703700_3396568903795911126_n.jpg?stp=dst-jpg_p180x540_tt6&_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeH2Rae-a5s7Yf-YXTTlpwpqSHT55ibvj5FIdPnmJu-PkXQQi1LvOQRZ3vl8dxSX6lX2QrTV9cssHRrTOAT12f4p&_nc_ohc=9zcWzCOeEkkQ7kNvwEaFpmo&_nc_oc=AdnBjFq5ai7zzxOdVSWcbxt2Uolglxju8HU3Z_1-N7KRxJlj4BOpKzG6yb8-p0L7si1hHroC3QpPV3nhHErOG3cQ&_nc_zt=23&_nc_ht=scontent.fcgy1-1.fna&_nc_gid=fGhWRSK3gRCSzXBLgfiE5g&oh=00_AfJrK67LwMvoIA0B30ifQSTBLxjMhmJRdGFFFzKSpzqhpw&oe=684AA32B",
+            "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/28/b7/21/10/caption.jpg?w=300&h=300&s=1",
+            "https://i.ytimg.com/vi/Y1sf431Zvlw/maxresdefault.jpg"
+          ]
+        },
+        balagbag: {
+          features: [
+            { icon: "fa-water", text: "Waterfall" },
+            { icon: "fa-swimming-pool", text: "Swimming" },
+            { icon: "fa-tree", text: "Rainforest" },
+            { icon: "fa-hiking", text: "Adventure" }
+          ],
+          images: [
+            "https://scontent.fcgy1-3.fna.fbcdn.net/v/t39.30808-6/480498133_557498323993247_2319589127475899929_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=103&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeGkWJH_jg2yVi_A6fTl2xlR6n42AOeOokjqfjYA546iSBeGkAttatbJWL2cuMEM10GxJlq1TzZmxxwamjDutoN4&_nc_ohc=T-tdjNiTS6IQ7kNvwEuPX1I&_nc_oc=AdkVPZ9CKyxkRuJW0xFJm2328B1mZs6ZEFu13uH0OMH1mLlFmHTA8YrouI0CQEYOZhysSf-KFx_VaID2r5IQ0xUN&_nc_zt=23&_nc_ht=scontent.fcgy1-3.fna&_nc_gid=njKvuUubWh0bxytc1WKcLA&oh=00_AfLQvH-84XH_gjGMPS83cXaA07WXumGjamS6oeR3iiLy1Q&oe=68292907",
+            "https://i.ytimg.com/vi/k1T1HJctFYU/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAL2Xivmt2Kgll-KmiGqP--jHlQJw",
+            "https://scontent.fcgy1-1.fna.fbcdn.net/v/t39.30808-6/432406012_325815170494898_2037193469574140580_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGhomc23wxnFA7bciksoYllcnhoZHJ687RyeGhkcnrztJim-3RYPlSyXILHMMGg3L_v0EFLPjv1001AlX0AUnMU&_nc_ohc=Igd0wt6PlFYQ7kNvwHowTcJ&_nc_oc=AdkdYJm99P_j-6b5Qg3vCsNxGnz0zuXwcn9DtLZTJZPqpAG1subB2mUI4ByDeQTveGKt6pukUVC5os41BsZYxyZB&_nc_zt=23&_nc_ht=scontent.fcgy1-1.fna&_nc_gid=u1zr-dK65siTxkX3YRoEJw&oh=00_AfLLzn0Vj9-cN4O_vmShopzfakGV5R4j7rFUFTZ6SiK3Bg&oe=6829372C"
+          ]
+        },
+        tignoan: {
+          features: [
+            { icon: "fa-umbrella-beach", text: "Beach" },
+            { icon: "fa-water", text: "Surfing" },
+            { icon: "fa-sun", text: "Sunbathing" },
+            { icon: "fa-water", text: "Pacific Swells" }
+          ],
+          images: [
+            "https://scontent.fcgy1-3.fna.fbcdn.net/v/t1.6435-9/32324241_838334959693974_8055970977722400768_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeF4U96Ko6Tl1t-7e74eK5L2deVBTOpHdqh15UFM6kd2qHKSvxx91BOmiRRCQyloqUJdORcUXJd9dnDIGLEr-G0j&_nc_ohc=8jrpaFn0sOoQ7kNvwGuafku&_nc_oc=AdnAHeKlZoOitP1Z40tYKhPDSj02qYn5WZzquaoIGOEXxqb4cu2nfSSDdebOl72fg3ht-6YW9AmxJb9bnVzOuBqo&_nc_zt=23&_nc_ht=scontent.fcgy1-3.fna&_nc_gid=xnm_geyzNR83yfi5cTDhug&oh=00_AfLxysL_VElqswc4Joxq3-LB1kK24VI-JGO6oBQV_VmuBA&oe=684AAEC0",
+            "https://scontent.fcgy1-3.fna.fbcdn.net/v/t1.6435-9/32374301_838334986360638_1257882795854790656_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeFzU-PXSHfonjIbrtvrrjrmB6q4o-gyARIHqrij6DIBEppaiuRRg8VhRwJCx0zzu7jlZXKyk0hP9J-HIsmBZI9z&_nc_ohc=Z59HWFn0mqYQ7kNvwHVBWPl&_nc_oc=AdlUx-oRHsKjN8-3R9o1GDdB5u-8wGFw9RV9KE_vQ1Al2995b0r_AqNsh4DVMIzv6zU0UnRZVvN3bhK34B37p8jq&_nc_zt=23&_nc_ht=scontent.fcgy1-3.fna&_nc_gid=i_MmohAIsDqxQgoZVM-BHw&oh=00_AfLbQ_9mwnVxbqPxGhSUfnhjcXkq7L0TMRKGB1-fh_M_2w&oe=684ABD5C",
+            "https://scontent.fcgy1-3.fna.fbcdn.net/v/t1.6435-9/32453865_838335059693964_8374216788656783360_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeFT24mMeg9cnE_tSspKVzuK8teLebq4aA_y14t5urhoD3Bc-BdP0T1aP2b-hdNXvJJAQcWX0HgpvncQ8Jz7Onz0&_nc_ohc=6LBE8MpPhB4Q7kNvwGQbiu0&_nc_oc=AdmwLibJ-dYmThV97XNnSW1jg0CuPwYPb2WsJfXx3C37T4Ne2I0gLnsmF0370Fehm9c4UaOSpdvjV6zMCqwUsE6W&_nc_zt=23&_nc_ht=scontent.fcgy1-3.fna&_nc_gid=tDXHiniXoNs8LLuqWSUCog&oh=00_AfLdnaulJM-ofcDM_eOK_Yop3OqFLVUAmeqzGNTan40OcA&oe=684ABE2D",
+            "https://scontent.fcgy1-3.fna.fbcdn.net/v/t1.6435-9/32453865_838335059693964_8374216788656783360_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeFT24mMeg9cnE_tSspKVzuK8teLebq4aA_y14t5urhoD3Bc-BdP0T1aP2b-hdNXvJJAQcWX0HgpvncQ8Jz7Onz0&_nc_ohc=6LBE8MpPhB4Q7kNvwGQbiu0&_nc_oc=AdmwLibJ-dYmThV97XNnSW1jg0CuPwYPb2WsJfXx3C37T4Ne2I0gLnsmF0370Fehm9c4UaOSpdvjV6zMCqwUsE6W&_nc_zt=23&_nc_ht=scontent.fcgy1-3.fna&_nc_gid=tDXHiniXoNs8LLuqWSUCog&oh=00_AfLdnaulJM-ofcDM_eOK_Yop3OqFLVUAmeqzGNTan40OcA&oe=684ABE2D"
+          ]
+        },
+        borawan: {
+          features: [
+            { icon: "fa-umbrella-beach", text: "Beach" },
+            { icon: "fa-water", text: "Snorkeling" },
+            { icon: "fa-mountain", text: "Limestone Cliffs" },
+            { icon: "fa-camera", text: "Photography" }
+          ],
+          images: [
+            "https://www.thepoortraveler.net/wp-content/uploads/2011/06/borawan-island-padre-burgos-quezon.jpg",
+            "https://i0.wp.com/shoestringdiary.wordpress.com/wp-content/uploads/2017/08/borawan03-ss_diariesjpg.jpg?fit=1200%2C633&ssl=1",
+            "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEietS08uK3378oS1oBDrIeBNn3b8DjQCrCC-7hAJdVL6UDDbhMCc3P3En0z53y2OdJ0OEKwqlKHy0jt47Ly_hp_Z2N0jUF4DrWyIws20z3fN9oD1zRVKZS_CIt5OLbsoGkgsh1bRpwz0cA/s1600/Borawan+Island.jpg",
+            "https://pix10.agoda.net/hotelImages/26091474/-1/d7c0faa5fd173dd42ea103a768e17bed.jpg?ca=20&ce=0&s=414x232&ar=16x9",
+            "https://images.trvl-media.com/lodging/103000000/102700000/102694000/102693970/67a3b5d8.jpg?impolicy=resizecrop&rw=575&rh=575&ra=fill",
+            "https://scontent.fcgy1-2.fna.fbcdn.net/v/t39.30808-6/485277820_1215220827279716_4879104965183016602_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHPWPjqozWJcZaIziYeZuWVvlqD1RKtfym-WoPVEq1_KYhqpqX8-ebb1ZhoBPiprnmDnq7vjibk2-KjBkq_nRZH&_nc_ohc=K4of64qykD0Q7kNvwEH5J3Y&_nc_oc=AdnGig3nDYl_IDqZQNpnhwCdXdAK__PpIOB14JfUAxK5HgR2YrsV_b-xKIWR-Fn0mBUhpMQTQYIb9XdcCPZwgRu0&_nc_zt=23&_nc_ht=scontent.fcgy1-2.fna&_nc_gid=oYL6U71BPY8BNfOmozUfTQ&oh=00_AfK6n3w84xj8gmGUo1QdkVmxlFC9EAAbvbNyni1tG-SEqg&oe=68292B07"
+          ]
+        },
+        aluyon: {
+          features: [
+            { icon: "fa-water", text: "Spring" },
+            { icon: "fa-swimming-pool", text: "Swimming" },
+            { icon: "fa-tree", text: "Bamboo Groves" },
+            { icon: "fa-utensils", text: "Picnic Areas" }
+          ],
+          images: [
+            "https://scontent.fcgy1-3.fna.fbcdn.net/v/t39.30808-6/491837170_1287477560052651_8341764511123206165_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHuOW_hXZlasoZWmTW_xkqa5zvzx1YvUwLnO_PHVi9TAux34bTPc9lukx2navla-EteVz-H9CSTtBG3e2zAvR0h&_nc_ohc=gieqobCo-sgQ7kNvwGM7eCE&_nc_oc=AdlQPqCuCgVHWdzMQcMVM2X6ExqtMxsLWqMIPd5AUV3ypBezQs0ABV_gMUaX107nxgM0kL7v4TEfM4TvJuQ8-mVe&_nc_zt=23&_nc_ht=scontent.fcgy1-3.fna&_nc_gid=cpnEkdgdRjrCmGIrUKoHEw&oh=00_AfK7e6xg8F6AWomdWatVn70nWXVDBBeK5xTwj8WEKw1JZA&oe=68290DA1",
+            "https://i0.wp.com/turistaboy.com/wp-content/uploads/2022/05/IMG_8213-scaled.jpeg?resize=770%2C578&ssl=1",
+            "https://i0.wp.com/kapampangantraveller.com/wp-content/uploads/2024/07/img_9804-1.jpg?w=768&ssl=1",
+            "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhq_aDgfHHCWOpHXN0eyxl7AUghMwoe8RLBWxMiWIi-NnZgTnXcbAe_Y5MXFjtWSqmXua7Gu7B-xBAPnW83OtiRUM9A2ejyROFKS7Ha8PoQ1idZJqkxY4MJ_DGdGByNPW7nBngpWNQ0oQI/s1600/Alibijaban+Island_Quezon+4.JPG",
+            "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/c2/82/9f/serenity.jpg?w=1100&h=1100&s=1"
+          ]
+        },
+        magsaysay: {
+          features: [
+            { icon: "fa-mountain", text: "Mountain Views" },
+            { icon: "fa-sun", text: "Sunset Spot" },
+            { icon: "fa-camera", text: "Photography" },
+            { icon: "fa-binoculars", text: "Bird's Eye View" }
+          ],
+          images: [
+            "https://a0.muscache.com/im/pictures/6da8178c-88da-4641-b871-b18e66e52707.jpg",
+            "https://highlandreflections.com/wp-content/uploads/2021/06/img20210627141335.jpg?w=1024"
+          ]
+        },
+        tayawan: {
+          features: [
+            { icon: "fa-tree", text: "Mangrove Forest" },
+            { icon: "fa-water", text: "Eco-Tourism" },
+            { icon: "fa-hiking", text: "Boardwalk" },
+            { icon: "fa-leaf", text: "Nature" },
+            { icon: "fa-swimming-pool", text: "Swimming" },
+          ],
+          images: [
+            "https://scontent.fcgy1-3.fna.fbcdn.net/v/t39.30808-6/487546023_9436799069745791_1105637492619690497_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGuTv2ihozGCiTQkuCUesYjGK4maGAQWWoYriZoYBBZauiSn-WHoZi0_C_013XN1xT9x_8fQNWVkMM-E5bff3v9&_nc_ohc=4w-sQzyTHWgQ7kNvwGaSnWd&_nc_oc=AdlN6zXOfKdLHWW840MsIItZ_rw8tiYJE-NoPMoHoM_0g9xaDPtpnJqbthWMkLfOTl80L3ndk340oCTdXpw8ASL2&_nc_zt=23&_nc_ht=scontent.fcgy1-3.fna&_nc_gid=_OSjom-qTn2qeNg8sHzdSg&oh=00_AfKyIvNz7RiWk7JVaW6ClP2FhVPPDGq0lHoPqvLd9x3suw&oe=68290D5E",
+            "https://scontent.fcgy1-3.fna.fbcdn.net/v/t39.30808-6/487410656_9436799053079126_193727191503403386_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGdJLrhSVx3x8P78L5SCBHIkZxJmHq3ERaRnEmYercRFiC1I4yRtFLmz147Vnpfjpr99zt0JJEyrzLTc2CYjrWX&_nc_ohc=_VxnOnF-KCsQ7kNvwEopPby&_nc_oc=Admju9vefMvKnnp-V6jDeTGAN17JV0tGEfVwuOnvnQ-8TNmoHkEGRpRoSnJidBR-7x00WSr6ecj-ixPAzlH0UjQv&_nc_zt=23&_nc_ht=scontent.fcgy1-3.fna&_nc_gid=nC3qQLZylyiE8GECf1Bprw&oh=00_AfLGEyE0CmPACQBFa6jB8FXymg6BFhdJ2M2vIurLtMzv3g&oe=682926E6"
+          ]
+        },
+        digman: {
+          features: [
+            { icon: "fa-water", text: "Waterfall" },
+            { icon: "fa-swimming-pool", text: "Swimming" },
+            { icon: "fa-tree", text: "Jungle" },
+            { icon: "fa-hiking", text: "Trekking" }
+          ],
+          images: [
+            "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/a2/f7/ea/inner-view.jpg?w=900&h=500&s=1",
+            "https://agdanganquezon.gov.ph/wp-content/uploads/2021/11/4-2.jpg",
+            "https://cathportez.wordpress.com/wp-content/uploads/2017/03/dscn3088.jpg",
+            "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBbAyvWo5Olg5N3d9uutWi0MtPQPX-RV1stM_yWmPhp68Uwk2C0_ovocEKZVV0WuzcJR3n6MTSmaY508Z5a9rp2b_TabOfigrPc2sC6MsBaKRJZsHmPdCkXqx0ihag1dF0y1DxTw/s1600/Agdangan+%252817%2529.JPG",
+            "https://quezonarchitectures.wordpress.com/wp-content/uploads/2017/10/u.jpg?w=500"
+          ]
+        },
+        salibungot: {
+          features: [
+            { icon: "fa-umbrella-beach", text: "Beach" },
+            { icon: "fa-water", text: "Clear Waters" },
+            { icon: "fa-ship", text: "Fishing Boats" },
+            { icon: "fa-sun", text: "Sunbathing" }
+          ],
+          images: [
+            "https://scontent.fcgy1-1.fna.fbcdn.net/v/t39.30808-6/464157988_7778780328890919_455709368616696017_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeH8CqXQVzTCmq1SW-NmiMM3VNZhYXJARtlU1mFhckBG2V1smFatWhawXU6Kt_Rs8QFy10Z6pXTvpeYB3Z3V_o4H&_nc_ohc=2_P6ETlQJQQQ7kNvwEgEMeD&_nc_oc=Adn04XXgNyjb7TKPAEszVPE03gVUtwkqyfHHiudBdqw83MkXWcVww5Msa45BHDnL4ZFBWywkrq_fj2HeORCytgdg&_nc_zt=23&_nc_ht=scontent.fcgy1-1.fna&_nc_gid=eOfFZYXpLH4MECEKIMamMA&oh=00_AfJhhHJV0ww5wQfAf_0j9aHFJJIbdesCNFxAFUV_CIdSqQ&oe=682929C6",
+            "https://scontent.fcgy1-3.fna.fbcdn.net/v/t39.30808-6/463879591_8519937938098580_1010714841280348258_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=cf85f3&_nc_eui2=AeHJhJA-i5NK7D-99fTmzGKvm7c1Ii6fm2CbtzUiLp-bYBxroryWJMHk7o3ELalU5o614y2mF3CrMT5AU20deIyq&_nc_ohc=hxOi_auQ4NMQ7kNvwGGDALg&_nc_oc=AdmSy4w5Swr_fXaU--am4xJfD2DVIoR37jD72MuDRFpXch3MrlSovCbnD7F90hShVXnfS6DHskIjzfAVPDAyxpRz&_nc_zt=23&_nc_ht=scontent.fcgy1-3.fna&_nc_gid=Xg2vzUTXJOQjt4P7iNAptg&oh=00_AfJMePsuxoXp9l9FxOBo1EIjvq00-WEsfhI2TyN-MySr_w&oe=68293D2E",
+            "https://scontent.fcgy1-1.fna.fbcdn.net/v/t39.30808-6/485140457_1266871348591065_2761506437095205021_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEM84dH-gDLY5GSStVMn38zQ4UATn-wpotDhQBOf7Cmi_ZzaoDTxEr5jZjEYLOkEmz0zXVcarGt0n2U9whKBVzw&_nc_ohc=hmqHIFhR2jEQ7kNvwGwcMDw&_nc_oc=AdlNBzqAo0wYiVzAjmI3rLuWKK715Rhd-mdncXF0w041EOx9HfxwrTCfVwteZKohSNypsnpHDA3MNaMKvNE0zdxE&_nc_zt=23&_nc_ht=scontent.fcgy1-1.fna&_nc_gid=ILwDtPj7-ONS0iLe2u_bOA&oh=00_AfIzPp4BK7ePqEgNPpCBhTHigPHmLoLceo8j1SrSszlDVg&oe=68291587",
+            "https://scontent.fcgy1-1.fna.fbcdn.net/v/t39.30808-6/485151046_1266871271924406_4325094583189002982_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFvgyJuBra1hU_scQocdPTr9kEndW62myb2QSd1brabJvofjEURs_j62fMzk0xAWmYUvjClG4_WHYhhEyxbjc_P&_nc_ohc=RuncmvAistUQ7kNvwEgDGHq&_nc_oc=AdkB-eKGACnFf1pY5630sZf-swzlRGlJhmM3I1tz4nNvbQnb2VT7QMuK3CDDbVglGC2ThNT1vwuoe4jE8iKt_Jyb&_nc_zt=23&_nc_ht=scontent.fcgy1-1.fna&_nc_gid=IsyLuNhQXokqghGle5TtOw&oh=00_AfJFjyYyaHavNUKL2Ahrsh-fGtw4lElAJHORT_r8PSeweA&oe=68293AAF"
+          ]
+        },
+        catanauan: {
+          features: [
+            { icon: "fa-water", text: "River Cruise" },
+            { icon: "fa-tree", text: "Mangroves" },
+            { icon: "fa-binoculars", text: "Birdwatching" },
+            { icon: "fa-ship", text: "Boat Tour" }
+          ],
+          images: [
+            "https://catanauancove.com/wp-content/uploads/2020/06/FnA-09-JETTY-VIEW-320x240.jpg",
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/493710971.jpg?k=7422bea48035e010bf5e223f6979306c294ba7bdfdaee7455342a4798c004952&o=&hp=1",
+            "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/04/79/00/catanauan-cove.jpg?w=900&h=-1&s=1",
+            "https://lh5.googleusercontent.com/p/AF1QipOhcwhacrvfKe44lElUWX8WfCGLNiSZx4EnBcgq",
+            "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/f7/f2/21/catanauan-cove.jpg?w=1200&h=-1&s=1",
+            "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/04/79/01/catanauan-cove.jpg?w=900&h=-1&s=1"
+          ]
+        },
+        pundakit: {
+          features: [
+            { icon: "fa-tree", text: "Mangrove Forest" },
+            { icon: "fa-firefly", text: "Firefly Watching" },
+            { icon: "fa-hiking", text: "Boardwalk" },
+            { icon: "fa-water", text: "River" }
+          ],
+          images: [
+            "https://media.pna.gov.ph/category-list/simple-file-uploads/mt.%20banahaw_5ab6382c408e27_04312796.jpg",
+            "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfaAOf05lranZWUrAR6eEZEh2z0NeG4ZndtgLGzBcI9EpoZq9LSUFb3fOREaEf_ALBfkqmqO_s4MHIdcNaeHoPEgsnrqKrZrpfveRmzIXYgwtDktkqsfVYR3X5jMd7YDOaqqpCl7E7w5E/s1600/thepinoywarrior+mt+banahaw+2.jpg",
+            "https://triptheislands.com/wp-content/uploads/2015/11/Banahaw1.jpg.webp",
+            "https://mnltoday.ph/wp-content/uploads/2019/10/1360853_orig-1024x575.jpg",
+            "https://live.staticflickr.com/2320/2111806169_1fa5f648e3_b.jpg",
+            "https://scontent.fcgy1-1.fna.fbcdn.net/v/t39.30808-6/490173532_24286682174266149_187769238038839686_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=105&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeEOw7iGVVKRSxDrCsK1BfNbzdJbjSMsugPN0luNIyy6A7g4B2PvMgzj0Gw62g7RFQuSe-N7Z-2vSEK5qLMR7kK_&_nc_ohc=Lnh0Wm6UnecQ7kNvwFaxegg&_nc_oc=AdlJ1s6sm2fFljhrRQTVrTOdYbvTxgYx7oR4JI5a32AUbupk2OEGj5pE-nZV8GKqZK25BbNrKwExkdFuuy9xtMxt&_nc_zt=23&_nc_ht=scontent.fcgy1-1.fna&_nc_gid=SzqaqZMjyf4uvSJCQGlceg&oh=00_AfLjIzLdRWP4ybCpQn6yk1x1ja5N99Y6mv5Px6ptltZfIg&oe=68292501"
+          ]
+        },
+        paripao: {
+          features: [
+            { icon: "fa-firefly", text: "Fireflies" },
+            { icon: "fa-ship", text: "Boat Tour" },
+            { icon: "fa-tree", text: "Nature" },
+            { icon: "fa-moon", text: "Night Activity" }
+          ],
+          images: [
+            "https://i.ytimg.com/vi/uMyaoYK3pGU/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDZkCS_BU0zv8Q7l18z2RSKi-hRgQ",
+            "https://scontent.fmnl13-3.fna.fbcdn.net/v/t39.30808-6/476370700_1002481048569667_5429368560636572327_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeG83LwgEo-YTAHMrufnNjVlemNLagcBnH96Y0tqBwGcf-A9DwWpSxy4m1yFtqDJUIcjfUoUC5ZphGoR0DzvSq5t&_nc_ohc=nY8RsmyB1DsQ7kNvwHoS6Ae&_nc_oc=AdmQ-W0Pdz19q5h8MUkIDoBnOoKbpGdeKdvqjvtImESeli40EbycGkYyM0dz5HXwRPmiHMDxgzmENukDMwFYdvXE&_nc_zt=23&_nc_ht=scontent.fmnl13-3.fna&_nc_gid=jZmKxgrOmXhzV2LOmgAfQQ&oh=00_AfKJFubU8CJEu44WfJ9XS6AAfjg_gcpsRT6IXvMCL7gQcA&oe=68291702",
+            "https://scontent.fmnl13-3.fna.fbcdn.net/v/t39.30808-6/476370522_1002481155236323_752197019727025032_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHKO3HP-IOqjZpgEtt3gys6BcnQPjKHl7kFydA-MoeXuV1ItNnUFlP85xYMTHTSmvLYPmjxU-WY0c5B2yu-pIXf&_nc_ohc=fbZUich0LJsQ7kNvwE-MmX1&_nc_oc=AdmGnaLcDtoKqDWrmXqqcctCIOhJlVyynGVR8wJEqmU0MniBtfMoAydPKxjloWCBGsRh9fZSS3I3DAvUCmf_oRHC&_nc_zt=23&_nc_ht=scontent.fmnl13-3.fna&_nc_gid=RjrCHy5rFt0Wo056L-UoBA&oh=00_AfJPO4yUwPIoDMMR5_FETS1f0wBhgQgdlrxfRllUxJ80pg&oe=682938BD"
+          ]
+        },
+        yumbak: {
+          features: [
+            { icon: "fa-water", text: "Waterfall" },
+            { icon: "fa-swimming-pool", text: "Plunge Pool" },
+            { icon: "fa-tree", text: "Jungle" },
+            { icon: "fa-hiking", text: "Trekking" }
+          ],
+          images: [
+            "https://images.saymedia-content.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:eco%2Cw_1200/MTc2MjQ0MzUxMjg0ODgwODA5/the-ancient-tombs-of-kamhantik.jpg",
+            "https://www.thehistoryblog.com/wp-content/uploads/2012/09/gather-objects-around-limestone-coffin.jpg",
+            "https://scx2.b-cdn.net/gfx/news/hires/2012/uniquetombsf.jpg"
+          ]
+        },
+        burdeos: {
+          features: [
+            { icon: "fa-umbrella-beach", text: "Beach" },
+            { icon: "fa-water", text: "Coral Reefs" },
+            { icon: "fa-monkey", text: "Wildlife" },
+            { icon: "fa-sun", text: "Island Getaway" }
+          ],
+          images: [
+            "https://outdoorsyintrovert.wordpress.com/wp-content/uploads/2016/05/dsc_0075.jpg",
+            "https://64.media.tumblr.com/f5add139144e826d5886fedc6fa387f7/tumblr_inline_p9lgk8xS2P1r15eo6_1280.jpg",
+            "https://burdeosquezontravel.wordpress.com/wp-content/uploads/2017/10/cropped-place21.jpg?w=1180"
+          ]
+        },
+        perez: {
+          features: [
+            { icon: "fa-park", text: "Urban Park" },
+            { icon: "fa-child", text: "Playground" },
+            { icon: "fa-tree", text: "Green Space" },
+            { icon: "fa-calendar", text: "Events" }
+          ],
+          images: [
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Quezon_Provincial_Capitol_right_side_view_%28Quezon_Avenue%2C_Lucena%2C_Quezon%3B_10-09-2022%29.jpg/1200px-Quezon_Provincial_Capitol_right_side_view_%28Quezon_Avenue%2C_Lucena%2C_Quezon%3B_10-09-2022%29.jpg",
+            "https://journal.com.ph/wp-content/uploads/2023/05/I-Love-Quezon-1200x800.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/c/cc/Lucena_Perez_Park_Bato.JPG",
+            "https://i0.wp.com/ajourneywithmeblog.com/wp-content/uploads/2020/10/20190607_115508.jpg?fit=640%2C480"
+          ]
+        },
+        pulong: {
+          features: [
+            { icon: "fa-umbrella-beach", text: "Beach" },
+            { icon: "fa-water", text: "Clear Waters" },
+            { icon: "fa-sun", text: "Relaxation" },
+            { icon: "fa-swimming-pool", text: "Swimming" }
+          ],
+          images: [
+            "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZKxvh4k_UDhqwzUs-zHlk2_HyzA8faLKVakPRhnVWF2m6qcIA1J4KLQqGD-75i0GFL4QlcV3jhBRI9zOcqQOTzDTQWLu0F0B79koY5Ol8FnEa4mmYo-uy5IQtNTbVNo0i8HAWXgYwZr4/s1600/P1040869.JPG",
+            "https://businessstudentssite.wordpress.com/wp-content/uploads/2016/06/13053891_f1024.jpg?w=640",
+            "https://www.beautyofthephilippines.com/wp-content/uploads/2024/03/Calauag-Quezon-Pulong-Pasig-Sandbar-2019-04-09-2019-04-09-IMG_0410-marianosayno-768x512.jpg",
+            "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1yMl-Gu5Id_moc5T1y30jCHjYl8mbek5r_48Qt-DhK3QpSrV6FHU_CO6ghs7LQI_S3ryM_Ecdns1S5tBIws1u4t7lgFT_Mdz23skimPDbf3CgBHFJCOaNdbLuPoDqgbb0Sl4h7l9jE1U/s1600/P1040846.JPG",
+            "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjd3UEjndjh1kN5IEQI-m-dlxBclHPHDx1DUzB-37tDIyaabYxjrmyEAwkwI1TdCNOU44walZLdPpv_7jUxDfg3THKGznnqtwMWB1F8gCFFiFlHoWrIbwSJvGQkfFj4FS2aPeeLA_Ow1G0/s1600/P1040709.JPG",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgSxnt0job-5-pbGPkXtYO6Ya9LcNbUn0da66ewgi5zXBI-_RMbA&s=10&ec=72940545"
+          ]
+        },
+        candle: {
+          features: [
+            { icon: "fa-candle", text: "Festival" },
+            { icon: "fa-music", text: "Cultural Performances" },
+            { icon: "fa-users", text: "Community" },
+            { icon: "fa-calendar", text: "Annual Event" }
+          ],
+          images: [
+            "https://www.beautyofthephilippines.com/wp-content/uploads/2017/09/Candle-Festival-Aliwan-Fiesta-2015-042615-DSC_0087.jpg",
+            "https://64.media.tumblr.com/f5dad1231d0afa08097260bd1cabaa58/tumblr_nnoo3l9TWX1sv7nsto3_1280.jpg",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSimfRJk3LzHfcYGBHi3g9JqwDZ-zV3M9O30eEXEvyKyqBAwgZ5A&s=10&ec=72940545",
+            "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZYy8sBINF92FjeWf7UCQoGzZMlbQwG8oTT0Nlq6oqu9OLbYpqpqa-ODwTTVTZYC3p1Lsl_yPGcNc9O8MrHGUMvUcwSWtuJmuT5M8NoVmuedoHIn1iQ1rqMaq1K0p_TCAmxFGDhr4SLest/s1600/1609891_573308119421990_2122628736_n.jpg",
+            "https://scontent.fmnl13-3.fna.fbcdn.net/v/t39.30808-6/464579569_8859643924095553_8253903402596347832_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeElC8iA7mtatpYZfY90GHdRdMDHi0DpPud0wMeLQOk-51VFTvVIiwlYEiPHUn1sMgNOl8QDAIdIK9UzQc1wd_Jp&_nc_ohc=n_URZ-b6QJsQ7kNvwF8ALR7&_nc_oc=AdkNtfs1kEMApHcdV9zXjF6jGV7DBfBhCsovCAnV19JabR9w57418agnz1Z-UiC-z-m0cE8UJUiB6HCz-w6M1Otn&_nc_zt=23&_nc_ht=scontent.fmnl13-3.fna&_nc_gid=AK2DHxsFp3sqNsMlduzOyw&oh=00_AfLIWbKOMH3o9QvoY4Uh6o4sJPa-xX0BePi9W8p25sJDJA&oe=682919E1"
+          ]
+        },
+        pamaypayan: {
+          features: [
+            { icon: "fa-fan", text: "Handwoven Crafts" },
+            { icon: "fa-parade", text: "Parade" },
+            { icon: "fa-calendar", text: "Festival" },
+            { icon: "fa-landmark", text: "Cultural" }
+          ],
+          images: [
+            "https://scontent.fmnl13-3.fna.fbcdn.net/v/t1.6435-9/58378000_2275531499157504_5703399768005279744_n.jpg?stp=dst-jpg_p180x540_tt6&_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHqvvHThwLHXKbGE_S4rwY0XI3EKH-uvwNcjcQof66_Ax_LNoTN-Re8N9DwBKgblM4cLHRa0vNjFSOZITcxpmkY&_nc_ohc=cJIEmxaWImQQ7kNvwEYv1ba&_nc_oc=Adm7tpP_4akUsAalGPmCdVCthFxhputU6me0UyGhdWi7b6vrKKfBct5X1PVDlTbO7KE0hyv0u-5kdsKxrRGBOQtq&_nc_zt=23&_nc_ht=scontent.fmnl13-3.fna&_nc_gid=owyy0cF2rYDstnN8ljM08g&oh=00_AfJM5FRB4CMMhXTe4afFMPEkh1YsgHMA8ZSwkHDs04kwvA&oe=684ADEBC",
+            "https://wonderfultownoflopezquezonblog.wordpress.com/wp-content/uploads/2017/10/22050194_1504628579574963_7948617730116425558_n.jpg",
+            "https://wonderfultownoflopezquezonblog.wordpress.com/wp-content/uploads/2017/10/12047178_929751500396010_4724893808104759480_n.jpg",
+            "https://whatmakeupcandotcom.wordpress.com/wp-content/uploads/2019/05/received_22535761480417434865443907701035039.jpeg?w=1100"
+          ]
+        },
+        arana: {
+          features: [
+            { icon: "fa-archway", text: "Decorated Arches" },
+            { icon: "fa-wheat", text: "Harvest Festival" },
+            { icon: "fa-calendar", text: "Annual Event" },
+            { icon: "fa-landmark", text: "Cultural" }
+          ],
+          images: [
+            "https://luckwhatcha.wordpress.com/wp-content/uploads/2015/05/blog02.jpg",
+            "https://luckwhatcha.wordpress.com/wp-content/uploads/2015/05/blog01.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/4/43/Ara%C3%B1a%27t_Baluarte_Festival_Gumaca3.JPG"
+          ]
+        },
+        banahaw: {
+          features: [
+            { icon: "fa-mountain", text: "Mountain Trail" },
+            { icon: "fa-hiking", text: "Hiking" },
+            { icon: "fa-pray", text: "Spiritual" },
+            { icon: "fa-tree", text: "Nature" }
+          ],
+          images: [
+            "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/b7/c5/94/mount-banahaw.jpg?w=800&h=400&s=1",
+            "https://lh3.googleusercontent.com/proxy/SJ-zAh-T0y22nvAVPLbgh9C5x8kMf_plSmNuwDrc7N4q0oCegNRFgbsSzhAFCSZ-i8I_ZdhgSleoCovQn167qtr2IC925Ru22QXZcgj43x3kPcvxa_N6X-iUuHUTcx_yHCFdx2KcieID1BU",
+          ]
+        },
+        maisan: {
+          features: [
+            { icon: "fa-corn", text: "Corn Festival" },
+            { icon: "fa-parade", text: "Street Dances" },
+            { icon: "fa-calendar", text: "Annual Event" },
+            { icon: "fa-tractor", text: "Agriculture" }
+          ],
+          images: [
+            "https://scontent.fmnl13-4.fna.fbcdn.net/v/t39.30808-6/465219667_9146912518665686_6330232157428215705_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=cf85f3&_nc_eui2=AeERT-HVb51ssRYm1puGbKdjgdj2LvjfPpSB2PYu-N8-lAgyap0zQ4WRoNlsTOfgE1YuC-swQPpMYif2xXondU7c&_nc_ohc=YZCzs_5eoc0Q7kNvwE9_CSy&_nc_oc=AdkEWqAazeb3nmTyvaW36Dyvw47mJqcP2TNzd3XwvpExX8mZK05FeMfo3EnRJ7t5PMZuLa3e3i9wiUeOwCfUC2t4&_nc_zt=23&_nc_ht=scontent.fmnl13-4.fna&_nc_gid=lyB7BINqLCUby1YdCxFrtQ&oh=00_AfKV7vgYK50qLPlv62y3QRNjdM5t1TpI--4GrsJ-ZM2FFQ&oe=68290FFB",
+            "https://vmelcidfamiliaran.weebly.com/uploads/8/3/4/3/83432350/34909224-1887966434600079-6726207592021884928-n_orig.jpg",
+            "https://scontent.fmnl13-3.fna.fbcdn.net/v/t39.30808-6/484230456_630895549861675_1393385511386922938_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHvDkN6tNDWChasRScDMoUFolN7QnE7UAeiU3tCcTtQByjkQRmBkHU2VWBZU0FApP6WlX0Rnl6KfIyXbncHMEDZ&_nc_ohc=4oNJ5JSw4eIQ7kNvwEFA6Bc&_nc_oc=AdnAjoShmNo_GAnHiVrL2v5xMKtV4_d7mb_iwnNYm54oTQZ1XjzGq5BI4m67AoBQlKVUBEuDnUN4_0qjQtyF5XAK&_nc_zt=23&_nc_ht=scontent.fmnl13-3.fna&_nc_gid=vbLvQVbp69pZRdgwl4T9xw&oh=00_AfKsJZiBE5x8nm_LT0AS6sdbjPUGynXilPchK0laxn0aNA&oe=68291DED"
+          ]
+        },
+        sanantonio: {
+          features: [
+            { icon: "fa-umbrella-beach", text: "Beach" },
+            { icon: "fa-water", text: "Gentle Waves" },
+            { icon: "fa-family", text: "Family-Friendly" },
+            { icon: "fa-sun", text: "Relaxation" }
+          ],
+          images: [
+            "https://scontent.fmnl13-3.fna.fbcdn.net/v/t39.30808-6/476257536_933368365543618_1252509161930362539_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHUe96N37jxS67UMrX1pkcZ6kZGeh524SHqRkZ6HnbhIbzMjNU4h5mJDqDCpSnKwfTcz5E7hKWHWNJ76z7W-4Rm&_nc_ohc=h7cUV1vz_V4Q7kNvwH4XLKM&_nc_oc=AdmUF9PzoBvV6tlrjMsV2iq8lZA8VakXIRrC--o7hz04Qz58GmkCGhEs7v8uR1rd0fbiRM9h7IaYHmXx70sW9Wqn&_nc_zt=23&_nc_ht=scontent.fmnl13-3.fna&_nc_gid=Wh6Zwy97J1JsePI9jT4s-w&oh=00_AfLCxxcv3L77itAVmMadDUJP1pPwD1Il9dUut_zQhVdS5A&oe=6829415E",
+            "https://scontent.fmnl13-4.fna.fbcdn.net/v/t39.30808-6/476116858_933368345543620_390031879323303611_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGbS4XHujPcPKcXm_GmRNd9DY5nXflkaMANjmdd-WRowL_mjSKYpPEgmvvce-qDAme4_SkbfmnwDohBYOmUn3lz&_nc_ohc=WIe5DCwNCSsQ7kNvwFhCmSN&_nc_oc=AdlN_JB6GnKd_014eXtoSZhi5DQ045MkJ3HzSCNdUJnPJWK7N1Bs-l-j3P0rGdZB-6N47xo1lVg_-Rkqm19jFlTE&_nc_zt=23&_nc_ht=scontent.fmnl13-4.fna&_nc_gid=6vqpUUcuZjoF3pch-odHrQ&oh=00_AfLYv6sF5p69jvYOFIILACEvWbflT0jjHZCD2DqykzOewQ&oe=68292393",
+            "https://scontent.fmnl13-3.fna.fbcdn.net/v/t39.30808-6/473436887_917839587096496_7480949502268295005_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHZwGUMxmFUF4hgnTbRD299uznIR2PUxAK7OchHY9TEAkecrSrLgTq1gVdKqiswL7GkgvzW04r8QlUxxnezBeFK&_nc_ohc=yFzJ1Dgc2eEQ7kNvwHtDf8w&_nc_oc=AdmuNtjRn1FJ5-EGLZjwb2H5LrXU8j0ISFLbi51D4PkEVzYcyLqnyFSYs4VleuKGOneGtkeqXpW-OvyiwjW51hn8&_nc_zt=23&_nc_ht=scontent.fmnl13-3.fna&_nc_gid=sXoHwv8y_6gmcbttZk0fYw&oh=00_AfLhp6-DLOIGQqcKLidlY6YB2QtsA3PDUuHtjczDtmc9MQ&oe=68292A7F"
+          ]
+        },
+        unisan: {
+          features: [
+            { icon: "fa-church", text: "Historical Church" },
+            { icon: "fa-landmark", text: "Landmark" },
+            { icon: "fa-history", text: "Spanish-era" },
+            { icon: "fa-pray", text: "Religious" }
+          ],
+          images: [
+            "https://scontent.fmnl13-3.fna.fbcdn.net/v/t39.30808-6/480588009_954074193570896_6405908855434447202_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeEKUgdE6m5HF16cGZsTeUD61AeZddC4D33UB5l10LgPfV3mF5fY_jBeTSW8GnUPjscYx4jQN849vZdT2UIiev3J&_nc_ohc=0vCHMEnalvgQ7kNvwErl7px&_nc_oc=AdmRXGuZboyyyWcI6xSmfTLq2xprgs6j3__-Y3EzBB14suXgNRCNDvaT9ksBQDYQpjFUgPrktQaMqrHKqIKV2Ube&_nc_zt=23&_nc_ht=scontent.fmnl13-3.fna&_nc_gid=HqwvqJY3kdJ0VYW9ZqmAjg&oh=00_AfIGpNugvFjgyqISvllahTQae7vwYUq7VG_fwvPnm8J5KA&oe=68292ED7",
+            "https://scontent.fmnl13-4.fna.fbcdn.net/v/t39.30808-6/487493600_1111951927638163_4206779537062905444_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeHno2pyorN7oISkXQCO9RE2M1-yqYZkocgzX7KphmShyF-Ak_BwYBMb9kQtMerdf2LI_01NEBLlxY5DZiIslhjg&_nc_ohc=SiMHq4jwagoQ7kNvwHPau23&_nc_oc=Adn0A55uuJQgD1HCICMfhwa3NOGT33Mxl1wwrwmJhNL4FJU60rSjIKcS6LBab3SpuxSBdezEDC1jzXzoSY7BB9KQ&_nc_zt=23&_nc_ht=scontent.fmnl13-4.fna&_nc_gid=Qji5BYIIK9qAaAFWtzgDbA&oh=00_AfJbwKoyIU2i0xacLr1n_37p_Z7FRHVFtsE2Rk6cVZp7TA&oe=682929ED",
+            "https://i.ytimg.com/vi/E0_10va7Sw8/sddefault.jpg"
+          ]
+        },
+        malinao: {
+          features: [
+            { icon: "fa-water", text: "Natural Spring" },
+            { icon: "fa-swimming-pool", text: "Swimming" },
+            { icon: "fa-tree", text: "Lush Vegetation" },
+            { icon: "fa-utensils", text: "Picnic Areas" }
+          ],
+          images: [
+            "https://scontent.fmnl13-3.fna.fbcdn.net/v/t39.30808-6/488967703_1130790505732444_8280309420036842046_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHqezGLIK9xcZT2zOuIhTKvb8CL4ZXEhwVvwIvhlcSHBfxFP9Zu2GU60eIX9Qwl1IoTdlCqewmB0PDTa25ILceb&_nc_ohc=ZVIut4zdV8oQ7kNvwFu_Mja&_nc_oc=AdnVHXjUxLHt9SpNgzgcuwO8-aCL2240bdgtrF3FweO-btk_1vt3UcEDSJPpw-euVKX0n4jjIt3dOPvYcgXgS6Bk&_nc_zt=23&_nc_ht=scontent.fmnl13-3.fna&_nc_gid=USLTM_KhJmjmo3EeSJFcTg&oh=00_AfIjQZQ-KhTItNIhx_134Q96H4v9zuJmfam6zxUBMYCz6A&oe=6829294B",
+            "https://scontent.fmnl13-4.fna.fbcdn.net/v/t39.30808-6/488770768_1130790169065811_651413128711585004_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFdXb9Bp9ATZVjReqcnuFNenl0upiMVXvGeXS6mIxVe8a8GMEobha6xeVShO_DVTJOIx31pYSp8HtDuJ8sAx2bk&_nc_ohc=1aW15EMGj4sQ7kNvwEgmwmg&_nc_oc=AdnHGGyq1d_2FYo01eMWhwoQ0zNbSOhusf53JVVDv_iDg2mg0oRQgoP8_aDCNp2yV0vDNbQW40VGTgwcTTmdRZDt&_nc_zt=23&_nc_ht=scontent.fmnl13-4.fna&_nc_gid=N89JgUuDYqY4qs1yT9RDTg&oh=00_AfIFApu7kqZkSQb5e8viALAZuO328vwMrohSSIFDIhuiAg&oe=6829349B",
+            "https://scontent.fmnl13-3.fna.fbcdn.net/v/t39.30808-6/489628443_1130790535732441_1010324449769854597_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFkaq0o2IsufKDGZR9xrXvoDHsWVI0jxBEMexZUjSPEEbmZalm2Ba2W4dx_WFJ7wNEVn_A9jREPQDzvO2_8e-xZ&_nc_ohc=u4edBxCNeCMQ7kNvwHtm-fa&_nc_oc=AdlF_kMAtbPfo5HJhKuUGMW_PN0vTbhrZMd_o0A2mAX3hMEC9e-I80lyMEU13c5_MzYQo9IL_VSQdGrXc7ncX0vR&_nc_zt=23&_nc_ht=scontent.fmnl13-3.fna&_nc_gid=4ZppX3z7V2TOuzCV-DMdhg&oh=00_AfI9Pvcpm1CVeZbtnSYBBuGHw2-rL1KC8RL3BuXiO7b31A&oe=68292BA9",
+            "https://scontent.fmnl13-3.fna.fbcdn.net/v/t39.30808-6/488660616_1130790165732478_8827037838403139263_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEwtRGiMKMynuRKbFZnA0xxIzhFQTKOJdIjOEVBMo4l0p0yYPukghtRHcyJ-FO8HDwLmLQE1k10rIHiCeXIKF4Q&_nc_ohc=Efs01Yl0HUkQ7kNvwE0ArPN&_nc_oc=AdmohNsImgXC4b9ZvvoUvYjbev9qmOKpHLaG9r1dYgdZVeYihA7DL5P7b2kp3e8I-wjN3vXNGmsW6jA0e-_NgwRT&_nc_zt=23&_nc_ht=scontent.fmnl13-3.fna&_nc_gid=H0OwVXunI8NYcH7uaEJaYg&oh=00_AfJ2Yp8rjY9yyY5PpIIxHF2sMzhz_VBxvgY8w-E_4MhdqA&oe=682934CC",
+            "https://scontent.fmnl13-4.fna.fbcdn.net/v/t39.30808-6/489730370_1130790189065809_3235644140355798945_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeE3pxBcAPGkKxOLTjh0ETmRcUCJqg6-IHhxQImqDr4geBwJrraNJ3w6zGG1RUzPs5q0jzvgnfFxoBbsaZ7Ioe6X&_nc_ohc=fosIwDsVwEYQ7kNvwHlnrSD&_nc_oc=AdnFze9xo1x4rdpNCRN52vaKQr-DZEKWxYr7MUwHqIZgmYR02lYyPXdhUGyVfAqyP8uH49N1CCUbI48kWpDbb2yu&_nc_zt=23&_nc_ht=scontent.fmnl13-4.fna&_nc_gid=cL7Gix9R1_hT6dL7Hq3b4w&oh=00_AfJMydmsN7quFfsfQjTCU2qNQu6X8cJA9AaQTlvlQETg4A&oe=6829418B",
+            "https://scontent.fcgy1-3.fna.fbcdn.net/v/t39.30808-6/489669121_1130790662399095_1455144444947128315_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFQLkNVqh9ApnWTRSf9IsG2fqwCn5PzGXl-rAKfk_MZefQ8XcavIaMwYQZ6Jh1sHHd7PtVNaT-Lalu7Ig71QSwk&_nc_ohc=GKtgPNCHeb8Q7kNvwH4s1z1&_nc_oc=AdnYa-NjaaR2d5V39U_j7D-JSWCavs3X6ms94aQ48Bz75lZq6G-B3t_69BZQNA0Lw_Z2XdOqbHWhlVqkfQhMybO_&_nc_zt=23&_nc_ht=scontent.fcgy1-3.fna&_nc_gid=g-likmfzIPv1oI43mID5zg&oh=00_AfJXytL6iATbCKa_Ox-0-nlsPDWOyaV76Tcs8E4zZO-TSg&oe=682931F1"
+          ]
+        },
+        macalelon: {
+          features: [
+            { icon: "fa-church", text: "Historical Church" },
+            { icon: "fa-landmark", text: "Landmark" },
+            { icon: "fa-history", text: "Spanish-era" },
+            { icon: "fa-pray", text: "Religious" }
+          ],
+          images: [
+            "https://scontent.fmnl13-4.fna.fbcdn.net/v/t39.30808-6/466043963_9377715808923340_240562141821844181_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=cf85f3&_nc_eui2=AeGzogeizYYjTy9zOOaLG7MP3lOhvwmUUm_eU6G_CZRSb4_xtNq5ZKpnBRrYro30jfy78WHe0E-b7HgSQO1mmiot&_nc_ohc=oyZ0G2VjOAAQ7kNvwGdwlRL&_nc_oc=Adlrao2zTzAu0Yzf1XtwtDuTqEHX90K1AfUPMNIbQH_XA1IulTge_krGaWX4LhMoHlleTPDikmYp3bI7q2i6-Jje&_nc_zt=23&_nc_ht=scontent.fmnl13-4.fna&_nc_gid=eh37J_e_6EzBmTMcIn74qQ&oh=00_AfKklBmvxA58buSOEzJRepak8atDoexzQi9iOXahfvKBOg&oe=68293AEF",
+            "https://scontent.fcgy1-3.fna.fbcdn.net/v/t39.30808-6/465790236_9377716022256652_1988478532762966188_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=cf85f3&_nc_eui2=AeEX5bsGwu_jChFV5KQ1P9k8fYqT8uJl3O59ipPy4mXc7lw335_dRBy-mWmdnba_pJcc8JJAMn_wJRRbkym81WhG&_nc_ohc=fuYwfdG6OosQ7kNvwGeEjhN&_nc_oc=AdmoMuxpZjXuKUUpQ2HKtWQyd4xaATBNSQ8qKV1OknIqbteFTBbdRsYiuGVkAqAVLUXJIuCFFVJZanszRPGsdcTP&_nc_zt=23&_nc_ht=scontent.fcgy1-3.fna&_nc_gid=8gZ-U7-9rI1_dEAJi-Nhmw&oh=00_AfIRrphREl6IuwzfZxZGM7j4j_zXJN_KgUCeAFHhglx3Zg&oe=68293CBC",
+            "https://scontent.fmnl13-4.fna.fbcdn.net/v/t39.30808-6/465799307_9377715825590005_7013479648180420705_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=cf85f3&_nc_eui2=AeEZRS-qGPBe59fJgIkrU0tsHMEAsHiOJoMcwQCweI4mg2pEDObD5vwB6aQ8CZVQ24Rz1HBdZDeA38Ow0cUYaq5W&_nc_ohc=H9LVu6F3Vh8Q7kNvwEsFXgr&_nc_oc=AdnOiAK-3W_aY7yAlvy78J6Om1Gr3qYn07kYtfOnyUyb2Sy7AQXshvLYrPgMJXtMCSQ8kTNkFpToz0IGn4Udt_r0&_nc_zt=23&_nc_ht=scontent.fmnl13-4.fna&_nc_gid=aMMwK6zCaOSqrmWtXKrEnw&oh=00_AfJhMX_sd9JaaAxDY2CSeRO83yBnG_cmNUvccBZb_uk2qA&oe=68292D11"
+          ]
+        },
+        lamon: {
+          features: [
+            { icon: "fa-umbrella-beach", text: "Beach" },
+            { icon: "fa-water", text: "Clear Waters" },
+            { icon: "fa-swimming-pool", text: "Swimming" },
+            { icon: "fa-sun", text: "Relaxation" }
+          ],
+          images: [
+            "https://alchetron.com/cdn/lamon-bay-d75b4799-1513-4689-a92f-b4d79b22089-resize-750.jpeg",
+            "https://www.vigattintourism.com/assets/article_main_photos/optimize/1347432053kfMti8SI.jpg",
+            "https://scontent.fmnl13-3.fna.fbcdn.net/v/t39.30808-6/484986183_9286198008143065_3050206966165351177_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeHo9mkk0gVHm7fG0yu-ZhjBPfqAWmFtR_09-oBaYW1H_frjsQ2FuJbyEDpCWT5fwiX5vDswYOcn_2ypVX4OpQuO&_nc_ohc=hq2jqVuZN0UQ7kNvwFWKnqU&_nc_oc=Adk4L3ys8Ma3i9g__UClSubjGFlGW3NDlV3-Seaoe5PwDaYUB_kv9_3hXZqm4Zb7Oif2VYeoOiF3-eSDHAMFrz_Z&_nc_zt=23&_nc_ht=scontent.fmnl13-3.fna&_nc_gid=OpVDwDSlFb9o5ZTTll8vtA&oh=00_AfIGneVKvO1ti17Zf5Tyc96Wljy1w1kSFREobJy0EYKxOw&oe=68293419"
+          ]
+        },
+        sanfrancisco: {
+          features: [
+            { icon: "fa-church", text: "Historical Church" },
+            { icon: "fa-landmark", text: "Landmark" },
+            { icon: "fa-history", text: "Spanish-era" },
+            { icon: "fa-pray", text: "Religious" }
+          ],
+          images: [
+            "https://scontent.fmnl13-4.fna.fbcdn.net/v/t39.30808-6/482093316_956712156572081_5909620632407037260_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeGLV8JrFO6tEOikHQdvyc69kh4Kkph-UHuSHgqSmH5Qe75-nbcFKxcYhSCNzJj_3vF6oWBPxPtK4C7jCHxTGdLL&_nc_ohc=Re6PpKN1C9kQ7kNvwGjhKSM&_nc_oc=Adlgt4ynnjFBqdTnT2d7bZJPSC0c0mrssAn8WosVommwfBxBfRf8N9UObUK6UwfXcwpBkV0rSvAOW3HuasZKbv8P&_nc_zt=23&_nc_ht=scontent.fmnl13-4.fna&_nc_gid=osIuygVyQ_dFORKIrC83dQ&oh=00_AfIq0U10I2HC2q1_bscJgA2UQ3O-MHvayDNozFjBcpWIrQ&oe=68291928",
+            "https://scontent.fmnl13-3.fna.fbcdn.net/v/t39.30808-6/481354761_956712576572039_1110261336652687324_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeFH_Uwk93SDNan4OgO5l-RoY7cbKtF_AaFjtxsq0X8BocG7jpx_7vID97AZrpOfh4Ru_Czuvs3T5LWrRr1BrOp_&_nc_ohc=JGYbzBmQxJQQ7kNvwECedVT&_nc_oc=AdkGgIyxPZrFzRoaj241AZiMBD-Y4UgljaU4NRNumRznJFvw_lB0EsEWKbUZ9_5X8pdMjLfrzHYZbF5qvlRgI3mQ&_nc_zt=23&_nc_ht=scontent.fmnl13-3.fna&_nc_gid=ReOaJw6bCfAvVgu9Rz34iQ&oh=00_AfKRy6lJA_GP90lW3qU3bLdpC4BpVwy8GKTd5vZyOILZJA&oe=68292A6D",
+            "https://scontent.fmnl13-4.fna.fbcdn.net/v/t39.30808-6/481296645_956712573238706_8834561491863892853_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeFRfBuKb9N4p-TAu5ji4_mNxsLwplOrCMbGwvCmU6sIxpWGqlTcnlEg-HEOoBLzBiciRjPDN4pKfoDPuFNKVVfl&_nc_ohc=Otek1Ld-Xt8Q7kNvwFY4zLA&_nc_oc=Adlb0EysOQpL013sTZFoxSu1ZsFS0eDw1AG_vGAefzbMf2Ns5xJzgyA0pjmQ5q0RFqSzCpHr7l4nO5pQ29HKOdMh&_nc_zt=23&_nc_ht=scontent.fmnl13-4.fna&_nc_gid=rflk5SlqFCXviCR9sj6zSw&oh=00_AfIROFjthmOiN1PP3WzzOTdRU6gbtW0JzmZ33m91_g9hIg&oe=68292248"
+          ]
+        },
+        pitogo: {
+          features: [
+            { icon: "fa-umbrella-beach", text: "Beach" },
+            { icon: "fa-water", text: "Calm Waters" },
+            { icon: "fa-family", text: "Family-Friendly" },
+            { icon: "fa-sun", text: "Relaxation" }
+          ],
+          images: [
+            "https://quezonprovincesite.wordpress.com/wp-content/uploads/2016/03/pitogo.jpg?w=640",
+            "https://scontent.fmnl13-3.fna.fbcdn.net/v/t39.30808-6/489292566_1106292428181644_4928793066281418592_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeH9D_2GLoRjCyYgUhYwqIcRCE17C0lzn_UITXsLSXOf9Q_2x5PrA9EDIXkaoPU5e43n1wvW1PMG7vrrStO7UxLh&_nc_ohc=PsLKQUFRYUwQ7kNvwEwHynH&_nc_oc=Adnj5ZQz8fWeoJXyMFdUCzaap7Ql9hSGckAl8ZI7kjnRnvYFXV_jM8ePiutNrIxZUEDA49Hml_xSexPzPxf9gzHT&_nc_zt=23&_nc_ht=scontent.fmnl13-3.fna&_nc_gid=hqT90IOgsX9HZXlWbpUXAg&oh=00_AfKZ0JJOBfI4X55_EcYxbtv1gB7TBT1QsLfg2C0mw5SHLQ&oe=68291C7A",
+            "https://scontent.fmnl13-3.fna.fbcdn.net/v/t39.30808-6/489430369_1106292481514972_2288046916127593562_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeHEDkrc09evNooqfN8jS2WbhwbKi7z_2TuHBsqLvP_ZO00_q1nmo8G1-E929wGSfqqJ1jIMaPZ40PNZmDlvAoow&_nc_ohc=JkukKzJiNooQ7kNvwGIp15M&_nc_oc=AdmQKnNGycSlTvu4yoj8XyHmESMRUHsSa8gaeiCCsUcDqsHZ8jRn43eCHhmmHJjWMX-F43YbjMmpvFwV5a4MGsQh&_nc_zt=23&_nc_ht=scontent.fmnl13-3.fna&_nc_gid=5woIh6hBCCG2bu2qnK4-Rw&oh=00_AfJxy2WYl-AzYR5TV5vReErE67O_00itAexEuo15piF-hA&oe=68294B5E"
+          ]
+        },
+        sannarciso: {
+          features: [
+            { icon: "fa-umbrella-beach", text: "Beach" },
+            { icon: "fa-water", text: "Gentle Waves" },
+            { icon: "fa-swimming-pool", text: "Swimming" },
+            { icon: "fa-sun", text: "Relaxation" }
+          ],
+          images: [
+            "https://www.beautyofthephilippines.com/wp-content/uploads/2015/05/San-Narciso-Quezon-Beach-2015-05-02-DSC_0217-copy-768x510.jpg",
+            "https://forshtravel.com/wp-content/uploads/2023/05/image4-1024x768.jpeg",
+            "https://i.pinimg.com/736x/93/1a/e2/931ae278063a501c41ee7db1b60fe888.jpg",
+            "https://www.beautyofthephilippines.com/wp-content/uploads/2017/11/Puting-Buhangin.-San-Narciso-Quezon-copy.jpg"
+          ]
+        },
+        sanjuans: {
+          features: [
+            { icon: "fa-water", text: "River Cruise" },
+            { icon: "fa-tree", text: "Mangroves" },
+            { icon: "fa-ship", text: "Boat Tour" },
+            { icon: "fa-binoculars", text: "Birdwatching" }
+          ],
+          images: [
+            "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/c0/f2/66/tanawan-falls.jpg?w=600&h=400&s=1",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkZi1i5RWcn2FM_GWw-5L2Suteo7BO_D764dvt35_UaSA88Uqs2A&s&ec=72940545",
+          ]
+        },
+        pandan: {
+          features: [
+            { icon: "fa-umbrella-beach", text: "Beach" },
+            { icon: "fa-water", text: "White Sand" },
+            { icon: "fa-snorkel", text: "Snorkeling" },
+            { icon: "fa-sun", text: "Island Getaway" }
+          ],
+          images: [
+            "https://scontent.fmnl13-3.fna.fbcdn.net/v/t39.30808-6/465240501_9110679432289417_5973950395591087884_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeF3FHFcSx4wvJTRfmH_ekdKJDqXfRoWQ9wkOpd9GhZD3GTI2PDpU3eO8Ljfs2u8EucdqQIu9obYNs6LCuenVMpB&_nc_ohc=5J253WDDZf4Q7kNvwHu07Nc&_nc_oc=Adlzyg9IvYV2mQrcR2oQEPIkGLoHpCyQFDFhJxyMNlo8mvHco4J0v7RjLmsQqu8VnGzTN_dNux57WgS8Ya270hK-&_nc_zt=23&_nc_ht=scontent.fmnl13-3.fna&_nc_gid=ksDlwZsKlqMvgR_O7wdKYw&oh=00_AfJyRy3PnNHVRv0y5HVl0u8RR3r8etBdGXH04njFCsZe1A&oe=682942A7",
+            "https://scontent.fmnl13-3.fna.fbcdn.net/v/t39.30808-6/490474379_1245141250948884_6073088518345237340_n.jpg?stp=cp6_dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGa6b8lSlHlXgg-ZW7N4zCgxeUmpbB9fPzF5SalsH18_N71Brh0bvBs-pgoFArL5oHUnVbi9tT9lubqJiiRPrBQ&_nc_ohc=qAERcjso4VAQ7kNvwF3p8kA&_nc_oc=AdlETz34jSj1dN1sCoe5BGBPzVOIrsyJjP0Ult2ZPmd0Nw4UyNRjezJhsHaANhjpHooXWfAWvaRLhQyXCWUhEYuV&_nc_zt=23&_nc_ht=scontent.fmnl13-3.fna&_nc_gid=HJ0z78nByqZliwjwVdATEA&oh=00_AfKjmjE6NKhPr1kXm-93Qcj-1c6mDv6KFjGo5z9NmYa52A&oe=682945B8",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS68hUY7NxjooLgxwKY7mk4feVk38s68g7Y2ipqCOw5vHScxr3uWbGALEf50mm4-4_T4A4&usqp=CAU"
+          ]
+        },
+        
+        patnanungan: {
+          features: [
+            { icon: "fa-umbrella-beach", text: "Beach" },
+            { icon: "fa-water", text: "Clear Waters" },
+            { icon: "fa-fish", text: "Fishing Village" },
+            { icon: "fa-sun", text: "Island Getaway" }
+          ],
+          images: [
+            "https://i.vimeocdn.com/video/1475383998-6d78ec7c3f9cb3e5e272c44af003afb77521fdb4ad1ab390d255e71b0dc3d567-d?f=webp",
+            "https://scontent.fmnl13-4.fna.fbcdn.net/v/t1.6435-9/158664491_117251517047412_6459207210509491040_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEXQ1x_bBnXU3EiFHsYperTIzTPTZlyzD0jNM9NmXLMPczWtKizYH4N0mTiKkvIPNcMlvjlfq_NNrN07pG4QX2J&_nc_ohc=YmvPRiuohZsQ7kNvwGHSVbA&_nc_oc=AdnMq3poYO6D3uROw06XsSfrUEoN26sRyUjl2QFxTiEml7ETEvV8DH7LdCvTvROLlcwnyfaP6WztVGIYf3EPBqnC&_nc_zt=23&_nc_ht=scontent.fmnl13-4.fna&_nc_gid=Dld94I05ig3-oRMPoKujoQ&oh=00_AfKLQK7q4eJ5MLVfqX7n9-YXb3jytsSjvcnMIqVIqfgY2g&oe=684ADF2C",
+            "https://images.gmanews.tv/webpics/2022/06/640_Patnanungan_2022_06_21_07_53_37.jpg"
+          ]
+        },
+        jomalig: {
+          features: [
+            { icon: "fa-umbrella-beach", text: "Beach" },
+            { icon: "fa-water", text: "Golden Sand" },
+            { icon: "fa-tree", text: "Palm Trees" },
+            { icon: "fa-sun", text: "Remote Island" }
+          ],
+          images: [
+            "https://i0.wp.com/curtisrussel.com/wp-content/uploads/2023/05/jomalig-philipines-travel-guide-00027-scaled.jpg?resize=770%2C578&ssl=1",
+            "https://i1.wp.com/thewanderwalkers.com/wp-content/uploads/2017/02/jomalig.jpg?ssl=1",
+            "https://www.wheninmanila.com/wp-content/uploads/2016/11/14523033_979392395498718_2542376117202295182_n.jpg",
+            "https://thehiddenjem.wordpress.com/wp-content/uploads/2015/02/dscn2010.jpg"
+          ]
+        },
+        kamayan: {
+          features: [
+            { icon: "fa-utensils", text: "Floating Restaurant" },
+            { icon: "fa-fish", text: "Fishpond Dining" },
+            { icon: "fa-seedling", text: "Nature-Inspired" },
+            { icon: "fa-star", text: "Rustic Experience" }
+          ],
+          images: [
+            "https://media-cdn.tripadvisor.com/media/photo-s/16/59/4b/92/kamayan-sa-palaisdaan.jpg",
+            "https://kamayansapalaisdaan.com/wp-content/uploads/2019/04/17467744_1638948749454443_1307283653_n.jpg",
+            "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/59/4c/14/kamayan-sa-palaisdaan.jpg?w=700&h=-1&s=1",
+            "https://ustcthm1h4.wordpress.com/wp-content/uploads/2016/03/swimming-pool-at-kamayan-sa-palaisdaan-resort-600x3981.jpg",
+            "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/05/06/7d/kamayan-sa-palaisdaan.jpg?w=900&h=500&s=1",
+            "https://www.taraletsanywhere.com/wp-content/uploads/2019/05/kamayan-sa-palaisdaan-food-665x499.jpg"
+          ]
+        },
+        buddys: {
+          features: [
+            { icon: "fa-utensils", text: "Authentic Lucban Cuisine" },
+            { icon: "fa-star", text: "Pahiyas Decor" },
+            { icon: "fa-sausage", text: "Lucban Longganisa" },
+            { icon: "fa-bowl-rice", text: "Pancit Lucban" }
+          ],
+          images: [
+            "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/74/44/61/family-favorite-at-buddy.jpg?w=900&h=-1&s=1",
+            "https://www.benjielayug.com/wp-content/uploads/2014/08/Dining-area.jpg",
+            "https://menuspricesphl.com/wp-content/uploads/2025/01/imgonline-com-ua-Compressed-wA9s7z5xDW9DkE-1024x576.webp",
+            "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/03/da/e3/3c/buddy-s-pancit-lucban.jpg?w=900&h=-1&s=1"
+          ]
+        },
+        viewdeck: {
+          features: [
+            { icon: "fa-mountain", text: "Mt. Banahaw View" },
+            { icon: "fa-leaf", text: "Farm-to-Table" },
+            { icon: "fa-utensils", text: "Locally Grown Food" },
+            { icon: "fa-sun", text: "Scenic Dining" }
+          ],
+          images: [
+            "https://od2-image-api.abs-cbn.com/prod/2024110103110/6cc1515c1fc61363c170d4ea5e55027029ebe532614a7344155fd30b34780139.jpg",
+            "https://scontent.fmnl13-4.fna.fbcdn.net/v/t39.30808-6/484075230_9243160252446841_8006096649031253696_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeHl21lFvl0LA-hYcg_BlkIo2MIjxP9_Z5bYwiPE_39nlvOOppCLrYPDLP6MpaZqSgPEfDXJVAfBG3T6uJ0axSZt&_nc_ohc=muXA0JJiFAMQ7kNvwFHN2Ic&_nc_oc=Adnvo8ruSICJwbzcFl5VcL_VX-VAj6iZp3ATQ-J9Mf51cqGD-6UoirsQvHNpLBHgcTOskoAD77-simpXHOnIdxGm&_nc_zt=23&_nc_ht=scontent.fmnl13-4.fna&_nc_gid=1MK0C60wuXXopZMx1MVXPw&oh=00_AfIH9Sas7jjFYyYVlyCjv6k_mk36KsnAWEWV_WxtzGS57Q&oe=6829C3CA",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsX1-0w4NTuSf1EEaFhzkdBlc7lvQLVjHPcV_NuqEMYZf6fKsPRg&s=10&ec=72940545",
+            "https://scontent.fmnl13-4.fna.fbcdn.net/v/t39.30808-6/480448310_9100559983373536_6080056710369187947_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeG1WsWOdKwXxrNHaO_g8bx1LZ7vcgc1aS0tnu9yBzVpLRweWtBpx7Ysv92RvvLteELIITxTs7_VshlF1AI2MQu0&_nc_ohc=G2NVQiZBfdgQ7kNvwGBwlUa&_nc_oc=Adld1abSU6fbdsmU7EQN-BUeUTV7tBwqwPdtsNCIzgiz_h-yIRiuNshN8h_c7XPF0bnHyJvNy6jNjKkdTTE-h8P7&_nc_zt=23&_nc_ht=scontent.fmnl13-4.fna&_nc_gid=Fi2jnjdMt_zOoAi2fIQyFA&oh=00_AfKVyjZgN7rw375c8kG1Qow6HTg2qZ6hVRUQcnRXdh9w5A&oe=6829D631",
+            "https://scontent.fmnl13-4.fna.fbcdn.net/v/t39.30808-6/492525888_1260530259409983_7322858133837126137_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGqSL0kygutYgKbvkKRJmWwYGTOwKO9_lBgZM7Ao73-UNXtsVn8f0bxq0_7KfM2NWid0vB5Pl6eaQwijt_4mHqH&_nc_ohc=QlY7L70HPZ8Q7kNvwEj_5Sf&_nc_oc=AdlvMRfXAzil3Y1RsgH6zwq_FFNXcD_H8LTt_tjr6DOZuxJ76vmyznsi9B9KBWUDahkkFd0QG20TofAwqTenAlKA&_nc_zt=23&_nc_ht=scontent.fmnl13-4.fna&_nc_gid=7eqSVbb-HLHFxVsUePrBLg&oh=00_AfJnqFiRxZQ5M8YIuoz7tTu7e_WuEvPMRWkUr9yZFLcrnQ&oe=6829D23D",
+            "https://scontent.fmnl13-3.fna.fbcdn.net/v/t39.30808-6/482358229_663375582886382_3888317835558596883_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFSQ41u5uFRiX032Q24mL07o5bopelQ4WCjluil6VDhYDbfjCyul2VWpBuzOJA6tCiOrmpBUUtxFApQwVa5UReg&_nc_ohc=u1B3fGj1QcgQ7kNvwEf9SwW&_nc_oc=AdkJlEzXJPCdqihiENuQGnzWys3OzKXccf5knDVzakQoXInIFFcKfjMsv1y-ihxS4FxPNgF7QpsRI-gnex_OC7St&_nc_zt=23&_nc_ht=scontent.fmnl13-3.fna&_nc_gid=5ynOc4XjGJV_bTHkrFv6Hw&oh=00_AfINq9ZXJvD_R9O1Mi-c0gsfZxeYOQ9Ri35eukuUnUC6sA&oe=6829D90E"
+          ]
+        },
+        pahiyasfestival: {
+          features: [
+            { icon: "fa-festival", text: "Cultural Festival" },
+            { icon: "fa-leaf", text: "Colorful Kiping Decor" },
+            { icon: "fa-users", text: "Community Celebration" },
+            { icon: "fa-music", text: "Parades & Performances" }
+          ],
+          images: [
+            "https://assets.unileversolutions.com/v1/105513974.jpg",
+            "https://hicaps.com.ph/wp-content/uploads/2022/05/Pahiyas-e1652532938564.jpg",
+            "https://i.pinimg.com/736x/07/ea/e7/07eae7398c1c18bbab06aaa25a745e42.jpg",
+            "https://www.oclarim.com.mo/en/files/2022/06/E-Pahiyas.jpg",
+            "https://villagepipol.com/wp-content/uploads/2024/05/PAHIYAS-FESTIVAL-FI-1.jpg.webp",
+            "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/07/bc/6f/02.jpg"
+          ]
+        }
+      };
+
+      // See more functionality 
+      document.addEventListener("DOMContentLoaded", function () {
+        let seeMoreBtn = document.getElementById("see-more");
+        let municipalityCards = document.querySelectorAll(
+          ".municipalities-grid .glass-card"
+        );
+        let visibleCount = 6;
+        const increment = 6;
+
+        municipalityCards.forEach((card, index) => {
+          if (index >= visibleCount) {
+            card.style.display = "none";
+          }
+        });
+
+        if (municipalityCards.length <= visibleCount) {
+          seeMoreBtn.style.display = "none";
+        }
+
+        seeMoreBtn.addEventListener("click", () => {
+          for (
+            let i = visibleCount;
+            i < visibleCount + increment && i < municipalityCards.length;
+            i++
+          ) {
+            municipalityCards[i].style.display = "block";
+          }
+
+          visibleCount += increment;
+
+          if (visibleCount >= municipalityCards.length) {
+            seeMoreBtn.style.display = "none";
+          }
+        });
+      });
+
+      // Scroll Effect
+      window.addEventListener("scroll", function () {
+        const scrollPosition = window.scrollY;
+        const header = document.getElementById("mainHeader");
+
+        if (scrollPosition > 50) {
+          header.classList.add("scrolled");
+          document.body.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+          document.body.classList.remove("scrolled");
+        }
+
+        const maxScroll = 300;
+        const scrollPercent = Math.min(scrollPosition / maxScroll, 1);
+        const darkenAmount = scrollPercent * 0.2;
+
+        document.body.style.setProperty(
+          "--card-bg",
+          `rgba(255, 255, 255, ${0.08 + darkenAmount})`
+        );
+      });
+
+      // Tourist Spot Display
+      let currentSpotImages = [];
+      let currentImageIndex = 0;
+
+      function openSpotModal(name, location, description, spotKey) {
+        const modal = document.getElementById("spotModal");
+        const modalTitle = document.getElementById("modalSpotTitle");
+        const modalLocation = document.getElementById("modalSpotLocation");
+        const modalDescription = document.getElementById(
+          "modalSpotDescription"
+        );
+        const modalGallery = document.querySelector(".spot-gallery");
+        const modalFeatures = document.querySelector(".spot-features");
+
+        const spot = spotData[spotKey];
+        currentSpotImages = spot.images;
+
+        modalTitle.textContent = name;
+        modalLocation.textContent = location + ", Quezon";
+        modalDescription.textContent = description;
+
+        modalGallery.innerHTML = "";
+        modalFeatures.innerHTML = "";
+
+        spot.images.forEach((imageUrl, index) => {
+          const img = document.createElement("img");
+          img.src = imageUrl;
+          img.alt = name;
+          img.onclick = () => openLightbox(index);
+          modalGallery.appendChild(img);
+        });
+
+        spot.features.forEach((feature) => {
+          const featureTag = document.createElement("div");
+          featureTag.className = "feature-tag";
+          featureTag.innerHTML = `<i class="fas ${feature.icon}"></i> ${feature.text}`;
+          modalFeatures.appendChild(featureTag);
+        });
+
+        modal.style.display = "block";
+      }
+
+      // Lightbox functions
+      function openLightbox(index) {
+        currentImageIndex = index;
+        const lightbox = document.getElementById("imageLightbox");
+        const lightboxImg = document.getElementById("lightboxImage");
+
+        lightboxImg.src = currentSpotImages[currentImageIndex];
+        lightbox.style.display = "block";
+        document.body.style.overflow = "hidden"; 
+      }
+
+      function closeLightbox() {
+        document.getElementById("imageLightbox").style.display = "none";
+        document.body.style.overflow = "auto"; 
+      }
+
+      function changeImage(n) {
+        currentImageIndex += n;
+
+        if (currentImageIndex >= currentSpotImages.length) {
+          currentImageIndex = 0;
+        } else if (currentImageIndex < 0) {
+          currentImageIndex = currentSpotImages.length - 1;
+        }
+
+        document.getElementById("lightboxImage").src =
+          currentSpotImages[currentImageIndex];
+      }
+
+      function toggleFullscreen() {
+        const elem = document.getElementById("lightboxImage");
+
+        if (!document.fullscreenElement) {
+          if (elem.requestFullscreen) {
+            elem.requestFullscreen();
+          } else if (elem.webkitRequestFullscreen) {
+            /* Safari */
+            elem.webkitRequestFullscreen();
+          } else if (elem.msRequestFullscreen) {
+            /* IE11 */
+            elem.msRequestFullscreen();
+          }
+        } else {
+          if (document.exitFullscreen) {
+            document.exitFullscreen();
+          }
+        }
+      }
+
+      document.getElementById("imageLightbox").onclick = function (e) {
+        if (e.target === this) {
+          closeLightbox();
+        }
+      };
+
+      document.addEventListener("keydown", function (e) {
+        const lightbox = document.getElementById("imageLightbox");
+        if (lightbox.style.display === "block") {
+          if (e.key === "Escape") {
+            closeLightbox();
+          } else if (e.key === "ArrowLeft") {
+            changeImage(-1);
+          } else if (e.key === "ArrowRight") {
+            changeImage(1);
+          } else if (e.key === "f") {
+            toggleFullscreen();
+          }
+        }
+      });
+
+      function closeModal(id) {
+        document.getElementById(id).style.display = "none";
+      }
+
+      window.onclick = function (event) {
+        if (event.target.classList.contains("modal")) {
+          document.querySelectorAll(".modal").forEach((modal) => {
+            modal.style.display = "none";
+          });
+        }
+      };
+
+      // Filter function
+      document.addEventListener("DOMContentLoaded", function () {
+        const filterButtons = document.querySelectorAll(".filter-btn");
+        const cards = document.querySelectorAll(".municipality-card");
+        const seeMoreBtn = document.getElementById("see-more");
+        const increment = 6;
+        
+        let currentFilter = "all";
+        let visibleCounts = {
+          all: 6,
+          beach: 6,
+          mountain: 6,
+          cultural: 6,
+          resort: 6,
+          religious: 6,
+          nature: 6,
+          festival: 6,
+          restaurant: 6
+        };
+
+        filterCards('all');
+
+      function filterCards(filterValue) {
+        currentFilter = filterValue;
+        
+        cards.forEach(card => {
+          card.style.display = "none";
+        });
+
+        let shownCount = 0;
+        cards.forEach(card => {
+          const cardFilters = card.dataset.filter.split(' ');
+          const matchesFilter = filterValue === "all" || cardFilters.includes(filterValue);
+          
+          if (matchesFilter && shownCount < visibleCounts[filterValue]) {
+            card.style.display = "block";
+            shownCount++;
+          }
+        });
+        
+        updateSeeMoreButton();
+      }
+
+      function updateSeeMoreButton() {
+        const filteredCards = Array.from(cards).filter(card => {
+          const cardFilters = card.dataset.filter.split(' ');
+          return currentFilter === "all" || cardFilters.includes(currentFilter);
+        });
+        
+        const hiddenCards = filteredCards.filter(card => 
+          card.style.display === "none" || window.getComputedStyle(card).display === "none"
+        ).length;
+        
+        seeMoreBtn.style.display = hiddenCards > 0 ? "block" : "none";
+      }
+
+      filterButtons.forEach(button => {
+        button.addEventListener("click", function() {
+          document.querySelector(".filter-btn.active").classList.remove("active");
+          this.classList.add("active");
+          
+          filterCards(this.dataset.filter);
+        });
+      });
+      
+      // See more function
+      seeMoreBtn.addEventListener("click", function() {
+        visibleCounts[currentFilter] += increment;
+        filterCards(currentFilter);
+      });
+
+    });
+
+      // Chatbot Function
+      document.addEventListener("DOMContentLoaded", function () {
+        const toggleButton = document.getElementById("toggleChatbot");
+        const chatContainer = document.querySelector(".ai-chat-container");
+
+        toggleButton.addEventListener("click", function () {
+          chatContainer.classList.toggle("collapsed");
+
+          const icon = this.querySelector("i");
+          if (chatContainer.classList.contains("collapsed")) {
+            icon.classList.remove("fa-comment-dots");
+            icon.classList.add("fa-chevron-up");
+          } else {
+            icon.classList.remove("fa-chevron-up");
+            icon.classList.add("fa-comment-dots");
+          }
+        });
+      });
+
+      document.addEventListener('DOMContentLoaded', function () {
+        const loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
+
+        const loginBtn = document.getElementById('loginBtn');
+        const registerBtn = document.getElementById('registerBtn');
+
+        if (loggedInUser) {
+          if (loginBtn) loginBtn.style.display = 'none';
+          if (registerBtn) registerBtn.style.display = 'none';
+
+          // Show user info or logout
+          const navContainer = document.querySelector('.nav-container');
+          const userProfile = document.createElement('div');
+          userProfile.classList.add('user-profile');
+          userProfile.innerHTML = `
+            <i class='fas fa-user-alt'></i>
+            <span>${loggedInUser.name}</span>
+            <button class="btn btn-outline" onclick="logout()">Logout</button>
+          `;
+          navContainer.appendChild(userProfile);
+        }
+
+        window.logout = function () {
+            localStorage.removeItem('loggedInUser');
+            location.href = "HTML_Home.html"; 
+        };
+      });
+
+      // FOOTER FUNCTION
+      document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.footer-link').forEach(link => {
+                link.addEventListener('click', function(e) {
+                if (!window.location.pathname.endsWith('HTML_About.html')) {
+                    sessionStorage.setItem('scrollTo', this.getAttribute('href'));
+                    window.location.href = 'HTML_About.html';
+                    return;
+                }
+                
+                // para mag scroll to section
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                    top: target.offsetTop - 100,
+                    behavior: 'smooth'
+                    });
+                }
+                });
+            });
+
+            // scroll position
+            if (window.location.pathname.endsWith('HTML_About.html') && sessionStorage.getItem('scrollTo')) {
+                const target = document.querySelector(sessionStorage.getItem('scrollTo'));
+                if (target) {
+                setTimeout(() => {
+                    window.scrollTo({
+                    top: target.offsetTop - 100,
+                    behavior: 'smooth'
+                    });
+                    sessionStorage.removeItem('scrollTo');
+                }, 100);
+                }
+            }
+        });
+    </script>
+  </body>
+</html>

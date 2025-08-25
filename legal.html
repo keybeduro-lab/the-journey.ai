@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>THE JOURNEY - Legal</title>
+    <link rel="stylesheet" href="about.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      /* Legal Page */
+      .legal-section {
+        padding: 80px 30px;
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+
+      .legal-header {
+        text-align: center;
+        margin-bottom: 50px;
+      }
+
+      .legal-header h1 {
+        font-size: 2.8rem;
+        background: linear-gradient(90deg, var(--text), var(--text-secondary));
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        font-weight: 700;
+        letter-spacing: -1px;
+        margin-bottom: 15px;
+      }
+
+      .legal-nav {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 40px;
+        flex-wrap: wrap;
+      }
+
+      .legal-nav a {
+        padding: 10px 20px;
+        border-radius: 30px;
+        background: rgba(255, 255, 255, 0.1);
+        color: var(--text);
+        text-decoration: none;
+        transition: all 0.3s ease;
+        font-weight: 500;
+      }
+
+      .legal-nav a:hover,
+      .legal-nav a.active {
+        background: var(--accent);
+        color: white;
+      }
+
+      .legal-content {
+        background: rgba(26, 27, 65, 0.7);
+        border-radius: 12px;
+        padding: 40px;
+        margin-bottom: 40px;
+      }
+
+      .legal-content h2 {
+        color: var(--text);
+        margin-bottom: 20px;
+        font-size: 1.8rem;
+        border-bottom: 2px solid var(--accent);
+        padding-bottom: 10px;
+      }
+
+      .legal-content h3 {
+        color: var(--text);
+        margin: 25px 0 15px;
+        font-size: 1.3rem;
+      }
+
+      .legal-content p,
+      .legal-content li {
+        color: var(--text-secondary);
+        line-height: 1.7;
+        margin-bottom: 15px;
+      }
+
+      .legal-content ul {
+        padding-left: 20px;
+        margin-bottom: 20px;
+      }
+
+      /* Cookie Settings Specific */
+      .cookie-settings {
+        background: rgba(26, 27, 65, 0.7);
+        border-radius: 12px;
+        padding: 30px;
+      }
+
+      .cookie-toggle {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .toggle-switch {
+        position: relative;
+        display: inline-block;
+        width: 50px;
+        height: 24px;
+      }
+
+      .toggle-switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+
+      .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: var(--secondary);
+        transition: 0.4s;
+        border-radius: 24px;
+      }
+
+      .slider:before {
+        position: absolute;
+        content: "";
+        height: 16px;
+        width: 16px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        transition: 0.4s;
+        border-radius: 50%;
+      }
+
+      input:checked + .slider {
+        background-color: var(--accent);
+      }
+
+      input:checked + .slider:before {
+        transform: translateX(26px);
+      }
+
+      .save-settings {
+        margin-top: 30px;
+        text-align: right;
+      }
+
+      @media (max-width: 768px) {
+        .legal-header h1 {
+          font-size: 2.2rem;
+        }
+
+        .legal-content {
+          padding: 30px 20px;
+        }
+
+        .legal-nav {
+          gap: 10px;
+        }
+
+        .legal-nav a {
+          padding: 8px 15px;
+          font-size: 0.9rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="mainHeader">
+      <div class="nav-container">
+        <div class="logo">THE JOURNEY<span>.ai</span></div>
+        <nav class="nav-links">
+          <a href="HTML_Home.html">Home</a>
+          <a href="#" id="discoverLink">Discover</a>
+          <a href="HTML_About.html">About</a>
+        </nav>
+        <div class="auth-buttons">
+          <button class="btn btn-outline" id="loginBtn">Login</button>
+          <button class="btn btn-primary" id="registerBtn">Register</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Legal Content -->
+    <section class="legal-section">
+      <div class="legal-header">
+        <h1>Legal Information</h1>
+        <p>Review our policies and manage your preferences</p>
+      </div>
+
+      <div class="legal-nav">
+        <a href="#privacy" class="active">Privacy Policy</a>
+        <a href="#terms">Terms of Service</a>
+        <a href="#cookies">Cookie Settings</a>
+      </div>
+
+      <!-- Privacy Policy -->
+      <div id="privacy" class="legal-content">
+        <h2>Privacy Policy</h2>
+        <p><em>Last Updated: May 2025</em></p>
+
+        <h3>1. Information We Collect</h3>
+        <p>
+          We collect information to provide better services to all our users.
+          The types of information we collect include:
+        </p>
+        <ul>
+          <li>
+            <strong>Personal Information:</strong> Name, email address, phone
+            number when you register an account.
+          </li>
+          <li>
+            <strong>Usage Data:</strong> Information about how you use our
+            website and services.
+          </li>
+          <li>
+            <strong>Location Data:</strong> Approximate location to provide
+            location-based services.
+          </li>
+          <li>
+            <strong>Cookies:</strong> See our Cookie Policy below for more
+            information.
+          </li>
+        </ul>
+
+        <h3>2. How We Use Your Information</h3>
+        <p>We use the information we collect for the following purposes:</p>
+        <ul>
+          <li>To provide, maintain, and improve our services</li>
+          <li>To personalize your experience</li>
+          <li>To communicate with you about updates and offers</li>
+          <li>To ensure the security of our services</li>
+          <li>For analytics and research to improve our products</li>
+        </ul>
+
+        <h3>3. Data Sharing and Disclosure</h3>
+        <p>
+          We do not sell your personal information. We may share your
+          information with:
+        </p>
+        <ul>
+          <li>Service providers who assist us in our operations</li>
+          <li>Legal authorities when required by law</li>
+          <li>Third parties in connection with a merger or acquisition</li>
+        </ul>
+
+        <h3>4. Your Rights</h3>
+        <p>You have the right to:</p>
+        <ul>
+          <li>Access, update or delete your personal information</li>
+          <li>Opt-out of marketing communications</li>
+          <li>Request a copy of your data</li>
+          <li>Withdraw consent where applicable</li>
+        </ul>
+      </div>
+
+      <!-- Terms of Service -->
+      <div id="terms" class="legal-content">
+        <h2>Terms of Service</h2>
+        <p><em>Effective Date: January 2025</em></p>
+
+        <h3>1. Acceptance of Terms</h3>
+        <p>
+          By accessing or using THE JOURNEY.ai website and services, you agree
+          to be bound by these Terms of Service.
+        </p>
+
+        <h3>2. User Accounts</h3>
+        <p>
+          When you create an account with us, you must provide accurate
+          information. You are responsible for maintaining the confidentiality
+          of your account credentials.
+        </p>
+
+        <h3>3. Acceptable Use</h3>
+        <p>You agree not to:</p>
+        <ul>
+          <li>Use our services for any illegal purpose</li>
+          <li>Attempt to gain unauthorized access to our systems</li>
+          <li>Interfere with or disrupt the service</li>
+          <li>Use our services to harass or harm others</li>
+        </ul>
+
+        <h3>4. Intellectual Property</h3>
+        <p>
+          All content on our website, including text, graphics, logos, and
+          software, is our property or the property of our licensors and is
+          protected by copyright laws.
+        </p>
+
+        <h3>5. Limitation of Liability</h3>
+        <p>
+          THE JOURNEY.ai shall not be liable for any indirect, incidental,
+          special or consequential damages resulting from the use or inability
+          to use our services.
+        </p>
+
+        <h3>6. Changes to Terms</h3>
+        <p>
+          We may modify these terms at any time. We will notify users of
+          significant changes through our website or email.
+        </p>
+      </div>
+
+      <!-- Cookie Settings -->
+      <div id="cookies" class="legal-content">
+        <h2>Cookie Policy</h2>
+        <p>
+          We use cookies and similar technologies to enhance your experience on
+          our website.
+        </p>
+
+        <h3>What Are Cookies?</h3>
+        <p>
+          Cookies are small text files stored on your device when you visit
+          websites. They help websites remember information about your visit.
+        </p>
+
+        <h3>Types of Cookies We Use</h3>
+        <ul>
+          <li>
+            <strong>Essential Cookies:</strong> Necessary for the website to
+            function properly.
+          </li>
+          <li>
+            <strong>Performance Cookies:</strong> Help us understand how
+            visitors use our site.
+          </li>
+          <li>
+            <strong>Functional Cookies:</strong> Remember your preferences.
+          </li>
+          <li>
+            <strong>Marketing Cookies:</strong> Used to deliver relevant ads.
+          </li>
+        </ul>
+
+        <div class="cookie-settings">
+          <h3>Cookie Preferences</h3>
+          <p>Manage your cookie settings below:</p>
+
+          <div class="cookie-toggle">
+            <div>
+              <h4>Essential Cookies</h4>
+              <p>Required for basic site functionality. Cannot be disabled.</p>
+            </div>
+            <label class="toggle-switch">
+              <input type="checkbox" checked disabled />
+              <span class="slider"></span>
+            </label>
+          </div>
+
+          <div class="cookie-toggle">
+            <div>
+              <h4>Performance Cookies</h4>
+              <p>Help us improve our website by collecting usage data.</p>
+            </div>
+            <label class="toggle-switch">
+              <input type="checkbox" id="performance-cookies" checked />
+              <span class="slider"></span>
+            </label>
+          </div>
+
+          <div class="cookie-toggle">
+            <div>
+              <h4>Functional Cookies</h4>
+              <p>Remember your preferences and settings.</p>
+            </div>
+            <label class="toggle-switch">
+              <input type="checkbox" id="functional-cookies" checked />
+              <span class="slider"></span>
+            </label>
+          </div>
+
+          <div class="cookie-toggle">
+            <div>
+              <h4>Marketing Cookies</h4>
+              <p>Used for advertising and personalization.</p>
+            </div>
+            <label class="toggle-switch">
+              <input type="checkbox" id="marketing-cookies" />
+              <span class="slider"></span>
+            </label>
+          </div>
+
+          <div class="save-settings">
+            <button class="btn btn-primary" id="save-cookie-settings">
+              Save Preferences
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>THE JOURNEY.ai</h3>
+          <p>Revolutionizing tourism through artificial intelligence</p>
+          <div class="ai-badge">
+            <a href="https://www.chatbase.co/" target="_blank">
+              <i class="fas fa-brain"></i>
+              <span>Powered by Chatbase.co</span>
+            </a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="HTML_Home.html#discover">Popular Destination</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="HTML_About.html#about">About Us</a></li>
+            <li><a href="HTML_About.html#technology">Our Technology</a></li>
+            <li><a href="HTML_About.html#careers">Careers</a></li>
+            <li><a href="HTML_About.html#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="HTML_Legal.html#privacy">Privacy Policy</a></li>
+            <li><a href="HTML_Legal.html#terms">Terms of Service</a></li>
+            <li><a href="HTML_Legal.html#cookies">Cookie Settings</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 THE JOURNEY.ai. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal" id="loginModal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Login to Your Account</h2>
+          <span class="close-modal" onclick="closeModal('loginModal')"
+            >&times;</span
+          >
+        </div>
+        <div class="modal-body">
+          <form id="loginForm">
+            <div class="form-group">
+              <label for="loginEmail">Email Address</label>
+              <input type="email" id="loginEmail" required />
+            </div>
+            <div class="form-group">
+              <label for="loginPassword">Password</label>
+              <input type="password" id="loginPassword" required />
+            </div>
+            <button type="submit" class="submit-btn">Login</button>
+            <div class="form-footer">
+              <p>Don't have an account?</p>
+              <a href="#" onclick="showRegister()"> Register here</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="modal" id="registerModal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Create an Account</h2>
+          <span class="close-modal" onclick="closeModal('registerModal')"
+            >&times;</span
+          >
+        </div>
+        <div class="modal-body">
+          <form id="registerForm">
+            <div class="form-group">
+              <label for="regName">Full Name</label>
+              <input type="text" id="regName" required />
+            </div>
+            <div class="form-group">
+              <label for="regEmail">Email Address</label>
+              <input type="email" id="regEmail" required />
+            </div>
+            <div class="form-group">
+              <label for="regPassword">Password</label>
+              <input type="password" id="regPassword" required />
+            </div>
+            <div class="form-group">
+              <label for="regConfirmPassword">Confirm Password</label>
+              <input type="password" id="regConfirmPassword" required />
+            </div>
+            <button type="submit" class="submit-btn">Register</button>
+            <div class="form-footer">
+              Already have an account?
+              <a href="#" onclick="showLogin()"> Login here</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      //Discover confirmation
+      document.addEventListener("DOMContentLoaded", () => {
+        const discoverLink = document.getElementById("discoverLink");
+        const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+
+        if (discoverLink) {
+          discoverLink.addEventListener("click", function (e) {
+            e.preventDefault();
+            if (loggedInUser) {
+              window.location.href = "HTML_discover.html";
+            } else {
+              alert("Please login first to access Discover.");
+              const loginModal = document.getElementById("loginModal");
+              if (loginModal) {
+                loginModal.style.display = "block";
+              }
+            }
+          });
+        }
+      });
+    </script>
+
+    <script>
+      // Scroll Effect
+      window.addEventListener("scroll", function () {
+        const scrollPosition = window.scrollY;
+        const header = document.getElementById("mainHeader");
+
+        if (scrollPosition > 50) {
+          header.classList.add("scrolled");
+          document.body.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+          document.body.classList.remove("scrolled");
+        }
+
+        const maxScroll = 300;
+        const scrollPercent = Math.min(scrollPosition / maxScroll, 1);
+        const darkenAmount = scrollPercent * 0.2;
+
+        document.body.style.setProperty(
+          "--card-bg",
+          `rgba(255, 255, 255, ${0.08 + darkenAmount})`
+        );
+      });
+
+      // Modal Functionality - Login & Register Display
+      document
+        .getElementById("loginBtn")
+        .addEventListener("click", function () {
+          document.getElementById("loginModal").style.display = "block";
+        });
+
+      document
+        .getElementById("registerBtn")
+        .addEventListener("click", function () {
+          document.getElementById("registerModal").style.display = "block";
+        });
+
+      function closeModal(id) {
+        document.getElementById(id).style.display = "none";
+      }
+
+      function showRegister() {
+        closeModal("loginModal");
+        document.getElementById("registerModal").style.display = "block";
+      }
+
+      function showLogin() {
+        closeModal("registerModal");
+        document.getElementById("loginModal").style.display = "block";
+      }
+
+      // Close modal when clicking outside
+      window.onclick = function (event) {
+        if (event.target.classList.contains("modal")) {
+          document.querySelectorAll(".modal").forEach((modal) => {
+            modal.style.display = "none";
+          });
+        }
+      };
+
+      // Login
+      document
+        .getElementById("loginForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const email = document.getElementById("loginEmail").value;
+          const password = document.getElementById("loginPassword").value;
+
+          const users = JSON.parse(localStorage.getItem("users")) || [];
+
+          const user = users.find(
+            (u) => u.email === email && u.password === password
+          );
+
+          if (user) {
+            localStorage.setItem("loggedInUser", JSON.stringify(user));
+            alert(`Welcome, ${user.name}!`);
+            window.location.href = "HTML_discover.html";
+          } else {
+            alert("Invalid email or password.");
+          }
+        });
+
+      // Register
+      document
+        .getElementById("registerForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const name = document.getElementById("regName").value;
+          const email = document.getElementById("regEmail").value;
+          const password = document.getElementById("regPassword").value;
+          const confirmPassword =
+            document.getElementById("regConfirmPassword").value;
+
+          if (password !== confirmPassword) {
+            alert("Passwords do not match. Please try again.");
+            return;
+          }
+
+          const users = JSON.parse(localStorage.getItem("users")) || [];
+
+          const emailExists = users.some((user) => user.email === email);
+          if (emailExists) {
+            alert("Email already registered!");
+            return;
+          }
+
+          users.push({ name, email, password });
+          localStorage.setItem("users", JSON.stringify(users));
+          alert("Registration successful! You can now log in.");
+          document.getElementById("registerModal").style.display = "none";
+          document.getElementById("loginModal").style.display = "block";
+        });
+
+      // Current Loggedin user ay massaved
+      document.addEventListener("DOMContentLoaded", function () {
+        const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+
+        const loginBtn = document.getElementById("loginBtn");
+        const registerBtn = document.getElementById("registerBtn");
+
+        if (loggedInUser) {
+          if (loginBtn) loginBtn.style.display = "none";
+          if (registerBtn) registerBtn.style.display = "none";
+
+          // Show user info or logout button
+          const navContainer = document.querySelector(".nav-container");
+          const userProfile = document.createElement("div");
+          userProfile.classList.add("user-profile");
+          userProfile.innerHTML = `
+                    <i class='fas fa-user-alt'></i>
+                    <span>${loggedInUser.name}</span>
+                    <button class="btn btn-outline" onclick="logout()">Logout</button>
+                `;
+          navContainer.appendChild(userProfile);
+        }
+
+        window.logout = function () {
+          localStorage.removeItem("loggedInUser");
+          location.reload();
+        };
+      });
+
+      // Cookie Function
+      document.addEventListener("DOMContentLoaded", function () {
+        if (localStorage.getItem("cookiePreferences")) {
+          const preferences = JSON.parse(
+            localStorage.getItem("cookiePreferences")
+          );
+          document.getElementById("performance-cookies").checked =
+            preferences.performance;
+          document.getElementById("functional-cookies").checked =
+            preferences.functional;
+          document.getElementById("marketing-cookies").checked =
+            preferences.marketing;
+        }
+
+        // Save cookie preferences
+        document
+          .getElementById("save-cookie-settings")
+          .addEventListener("click", function () {
+            const preferences = {
+              performance: document.getElementById("performance-cookies")
+                .checked,
+              functional: document.getElementById("functional-cookies").checked,
+              marketing: document.getElementById("marketing-cookies").checked,
+            };
+
+            localStorage.setItem(
+              "cookiePreferences",
+              JSON.stringify(preferences)
+            );
+            alert("Your cookie preferences have been saved.");
+          });
+
+        // Smooth scroll for legal navigation
+        document.querySelectorAll(".legal-nav a").forEach((link) => {
+          link.addEventListener("click", function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute("href");
+            const targetSection = document.querySelector(targetId);
+
+            // Kapag active
+            document
+              .querySelectorAll(".legal-nav a")
+              .forEach((a) => a.classList.remove("active"));
+            this.classList.add("active");
+
+            // Scroll sa section
+            if (targetSection) {
+              window.scrollTo({
+                top: targetSection.offsetTop - 100,
+                behavior: "smooth",
+              });
+
+              history.pushState(null, null, targetId);
+            }
+          });
+        });
+
+        function highlightCurrentSection() {
+          const hash = window.location.hash;
+          if (hash) {
+            const targetLink = document.querySelector(
+              `.legal-nav a[href="${hash}"]`
+            );
+            if (targetLink) {
+              document
+                .querySelectorAll(".legal-nav a")
+                .forEach((a) => a.classList.remove("active"));
+              targetLink.classList.add("active");
+            }
+          }
+        }
+
+        // highlight
+        highlightCurrentSection();
+
+        window.addEventListener("hashchange", highlightCurrentSection);
+      });
+    </script>
+  </body>
+</html>

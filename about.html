@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - THE JOURNEY.ai</title>
+    <link rel="stylesheet" href="about.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="mainHeader">
+      <div class="nav-container">
+        <div class="logo">THE JOURNEY<span>.ai</span></div>
+        <nav class="nav-links">
+          <a href="HTML_Home.html">Home</a>
+          <a href="#" id="discoverLink">Discover</a>
+          <a href="HTML_About.html" class="active">About</a>
+        </nav>
+        <div class="auth-buttons">
+          <button class="btn btn-outline" id="loginBtn">Login</button>
+          <button class="btn btn-primary" id="registerBtn">Register</button>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero" id="about">
+      <div class="hero-slideshow">
+        <div
+          class="hero-slide active"
+          style="
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8_yqz6OKsR66Ikj3DSlLUtvV-eAeCdKGG9Q&s');
+          "
+        ></div>
+        <div
+          class="hero-slide"
+          style="
+            background-image: url('data:image/jpeg;base64,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');
+          "
+        ></div>
+        <div
+          class="hero-slide"
+          style="
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6rNsLtbXrHCIt0-RLfGGHnpNzEkOfs5fxjA&s');
+          "
+        ></div>
+        <div
+          class="hero-slide"
+          style="
+            background-image: url('https://media-cdn.tripadvisor.com/media/photo-s/0a/73/68/24/get-a-chance-to-experience.jpg');
+          "
+        ></div>
+      </div>
+
+      <div class="hero-content">
+        <h1>About Us</h1>
+        <p>
+          Discover the story behind THE JOURNEY.ai and our mission to
+          revolutionize tourism in Quezon Province.
+        </p>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-section">
+      <div class="section-header">
+        <h2>Our Story</h2>
+        <p>
+          THE JOURNEY.ai was born from a passion for showcasing the beauty and
+          culture of Quezon Province through innovative technology.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card glass-card">
+          <i class="fas fa-bullseye"></i>
+          <h3>Our Mission</h3>
+          <p>
+            To provide an immersive, AI-powered platform that connects travelers
+            with the rich cultural heritage and breathtaking landscapes of
+            Quezon Province.
+          </p>
+        </div>
+
+        <div class="about-card glass-card">
+          <i class="fas fa-eye"></i>
+          <h3>Our Vision</h3>
+          <p>
+            To become the leading digital tourism platform in the Philippines,
+            setting new standards for personalized travel experiences.
+          </p>
+        </div>
+
+        <div class="about-card glass-card">
+          <i class="fas fa-heart"></i>
+          <h3>Our Values</h3>
+          <p>
+            Authenticity, Innovation, Sustainability, and Community - these core
+            values guide everything we do at THE JOURNEY.ai.
+          </p>
+        </div>
+      </div>
+
+      <div class="section-header">
+        <h2>Meet Our Team</h2>
+        <p>The passionate individuals behind THE JOURNEY.ai</p>
+      </div>
+
+      <div class="team-grid">
+        <div class="team-member glass-card">
+          <img
+            src="https://scontent.fmnl4-4.fna.fbcdn.net/v/t39.30808-1/472337797_2627234114132407_8068072321830259146_n.jpg?stp=dst-jpg_s160x160_tt6&_nc_cat=100&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeG0unnbMrHXIEQ7xCA1DhWI2cHOhXBG9QbZwc6FcEb1Bj16Ev4xaTqhlnPuBWlPZtqFLq0WixP6UdIkjy2k2XJU&_nc_ohc=_QTN8HP5xR4Q7kNvwEVhHYl&_nc_oc=AdmhiEFc2pqng2yR9CToRNy935Q6wzQKZGJp1gDwWpxU7FZY0kNbeRg-v8wYmeHN17w&_nc_zt=24&_nc_ht=scontent.fmnl4-4.fna&_nc_gid=h40xRO4QROlfIwtPbAB0Mw&oh=00_AfJEPsQzt2pfIzJaIbq7626SWUvAcevSBiLjFlcl1MM7dg&oe=6842E260"
+            alt="Team Member"
+          />
+          <h4>Keybe Duro</h4>
+          <p>Founder & CEO</p>
+        </div>
+
+        <div class="team-member glass-card">
+          <img
+            src="https://scontent.fmnl4-1.fna.fbcdn.net/v/t39.30808-6/475048640_122214741560069290_9071570709118893140_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeEVQI2GyEnAyiR7GqGwrXIoKnyblgQVjV0qfJuWBBWNXS-_hTdiny08d6uBP5DC31qPMrKu6iw4InkUTFh3yuzK&_nc_ohc=5JTmX-58ZFYQ7kNvwGGUCuP&_nc_oc=AdlItipnvA-S8hDO2itAomkYVK1zLri7rmriARP48SZlRfd2JGU95sw_Q8zmJ8Go9Oo&_nc_zt=23&_nc_ht=scontent.fmnl4-1.fna&_nc_gid=BflN1OJizceywLl-WilONQ&oh=00_AfJwHL6YbHoldM-qaxBxQ-pvos-G31AvfDXfa8c9rG4uEg&oe=6842E4C7"
+            alt="Team Member"
+          />
+          <h4>Mon Gabriel Eta</h4>
+          <p>Chief Technology Officer</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Technology Section -->
+    <section class="about-section glass-card" id="technology">
+      <div class="section-header">
+        <h2>Our Technology</h2>
+        <p>Cutting-edge solutions powering your Quezon Province experience</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card glass-card">
+          <i class="fas fa-robot"></i>
+          <h3>AI-Powered Recommendations</h3>
+          <p>
+            Our advanced algorithms learn your preferences to suggest
+            personalized itineraries and hidden gems across Quezon Province.
+          </p>
+        </div>
+
+        <div class="about-card glass-card">
+          <i class="fas fa-map-marked-alt"></i>
+          <h3>Interactive Maps</h3>
+          <p>
+            Explore Quezon with our immersive 3D maps featuring real-time
+            updates and augmented reality features.
+          </p>
+        </div>
+
+        <div class="about-card glass-card">
+          <i class="fas fa-comments"></i>
+          <h3>Multilingual Support</h3>
+          <p>
+            Break language barriers with our real-time translation features for
+            local dialects and languages.
+          </p>
+        </div>
+      </div>
+
+      <div class="section-header">
+        <h2>Our Tech Stack</h2>
+        <p>The technologies powering our platform</p>
+      </div>
+
+      <div class="tech-stack">
+        <div class="tech-item">
+          <div class="tech-icon">
+            <i class="fab fa-react"></i>
+          </div>
+          <p>React</p>
+        </div>
+
+        <div class="tech-item">
+          <div class="tech-icon">
+            <i class="fab fa-node-js"></i>
+          </div>
+          <p>Node.js</p>
+        </div>
+
+        <div class="tech-item">
+          <div class="tech-icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <p>MongoDB</p>
+        </div>
+
+        <div class="tech-item">
+          <div class="tech-icon">
+            <i class="fas fa-brain"></i>
+          </div>
+          <p>TensorFlow</p>
+        </div>
+
+        <div class="tech-item">
+          <div class="tech-icon">
+            <i class="fab fa-aws"></i>
+          </div>
+          <p>AWS</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Careers Section -->
+    <section class="about-section" id="careers">
+      <div class="section-header">
+        <h2>Careers</h2>
+        <p>Join our mission to transform tourism in Quezon Province</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card glass-card">
+          <i class="fas fa-users"></i>
+          <h3>Our Culture</h3>
+          <p>
+            We foster innovation, collaboration, and continuous learning in a
+            dynamic startup environment.
+          </p>
+        </div>
+
+        <div class="about-card glass-card">
+          <i class="fas fa-medal"></i>
+          <h3>Benefits</h3>
+          <p>
+            Competitive compensation, flexible work arrangements, and
+            opportunities for professional growth.
+          </p>
+        </div>
+
+        <div class="about-card glass-card">
+          <i class="fas fa-map-pin"></i>
+          <h3>Location</h3>
+          <p>
+            Based in the heart of Quezon Province with options for remote work.
+          </p>
+        </div>
+      </div>
+
+      <div class="section-header">
+        <h2>Current Openings</h2>
+        <p>We're looking for talented individuals to join our team</p>
+      </div>
+
+      <div class="job-openings">
+        <div class="job-card glass-card">
+          <h4>Frontend Developer</h4>
+          <p>
+            Help build beautiful, responsive interfaces for our tourism platform
+            using React and modern web technologies.
+          </p>
+          <button class="btn btn-outline">Apply Now</button>
+        </div>
+
+        <div class="job-card glass-card">
+          <h4>AI/ML Engineer</h4>
+          <p>
+            Develop and implement machine learning models to enhance our
+            recommendation systems and user experience.
+          </p>
+          <button class="btn btn-outline">Apply Now</button>
+        </div>
+
+        <div class="job-card glass-card">
+          <h4>Tourism Content Specialist</h4>
+          <p>
+            Research and create engaging content about Quezon Province's
+            attractions, culture, and history.
+          </p>
+          <button class="btn btn-outline">Apply Now</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="about-section glass-card" id="contact">
+      <div class="section-header">
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you</p>
+      </div>
+
+      <div class="contact-info">
+        <div class="contact-method">
+          <i class="fas fa-map-marker-alt"></i>
+          <div class="contact-details">
+            <h4>Visit Us</h4>
+            <p>Diversion Road, Brgy. Gulang-Gulang, Lucena City, Quezon Province, Philippines</p>
+          </div>
+        </div>
+
+        <div class="contact-method">
+          <i class="fas fa-phone-alt"></i>
+          <div class="contact-details">
+            <h4>Call Us</h4>
+            <p>+63 970 883 9779</p>
+          </div>
+        </div>
+
+        <div class="contact-method">
+          <i class="fas fa-envelope"></i>
+          <div class="contact-details">
+            <h4>Email Us</h4>
+            <p>info@thejourney.ai</p>
+          </div>
+        </div>
+
+        <div class="contact-method">
+          <i class="fas fa-clock"></i>
+          <div class="contact-details">
+            <h4>Business Hours</h4>
+            <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-header">
+        <h2>Send Us a Message</h2>
+        <p>Have questions or feedback? We're here to help.</p>
+      </div>
+
+      <div class="contact-form">
+        <form>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" required />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" required></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>THE JOURNEY.ai</h3>
+          <p>Revolutionizing tourism through artificial intelligence</p>
+          <div class="ai-badge">
+            <a href="https://www.chatbase.co/" target="_blank">
+              <i class="fas fa-brain"></i>
+              <span>Powered by Chatbase.co</span>
+            </a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="HTML_Home.html#discover">Popular Destination</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="#about" class="footer-link">About Us</a></li>
+            <li>
+              <a href="#technology" class="footer-link">Our Technology</a>
+            </li>
+            <li><a href="#careers" class="footer-link">Careers</a></li>
+            <li><a href="#contact" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="HTML_Legal.html#privacy">Privacy Policy</a></li>
+            <li><a href="HTML_Legal.html#terms">Terms of Service</a></li>
+            <li><a href="HTML_Legal.html#cookies">Cookie Settings</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 THE JOURNEY.ai. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal" id="loginModal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Login to Your Account</h2>
+          <span class="close-modal" onclick="closeModal('loginModal')"
+            >&times;</span
+          >
+        </div>
+        <div class="modal-body">
+          <form id="loginForm">
+            <div class="form-group">
+              <label for="loginEmail">Email Address</label>
+              <input type="email" id="loginEmail" required />
+            </div>
+            <div class="form-group">
+              <label for="loginPassword">Password</label>
+              <input type="password" id="loginPassword" required />
+            </div>
+            <button type="submit" class="submit-btn">Login</button>
+            <div class="form-footer">
+              <p>Don't have an account?</p>
+              <a href="#" onclick="showRegister()"> Register here</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="modal" id="registerModal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Create an Account</h2>
+          <span class="close-modal" onclick="closeModal('registerModal')"
+            >&times;</span
+          >
+        </div>
+        <div class="modal-body">
+          <form id="registerForm">
+            <div class="form-group">
+              <label for="regName">Full Name</label>
+              <input type="text" id="regName" required />
+            </div>
+            <div class="form-group">
+              <label for="regEmail">Email Address</label>
+              <input type="email" id="regEmail" required />
+            </div>
+            <div class="form-group">
+              <label for="regPassword">Password</label>
+              <input type="password" id="regPassword" required />
+            </div>
+            <div class="form-group">
+              <label for="regConfirmPassword">Confirm Password</label>
+              <input type="password" id="regConfirmPassword" required />
+            </div>
+            <button type="submit" class="submit-btn">Register</button>
+            <div class="form-footer">
+              Already have an account?
+              <a href="#" onclick="showLogin()"> Login here</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      (function () {
+        if (!window.chatbase || window.chatbase("getState") !== "initialized") {
+          window.chatbase = (...arguments) => {
+            if (!window.chatbase.q) {
+              window.chatbase.q = [];
+            }
+            window.chatbase.q.push(arguments);
+          };
+          window.chatbase = new Proxy(window.chatbase, {
+            get(target, prop) {
+              if (prop === "q") {
+                return target.q;
+              }
+              return (...args) => target(prop, ...args);
+            },
+          });
+        }
+        const onLoad = function () {
+          const script = document.createElement("script");
+          script.src = "https://www.chatbase.co/embed.min.js";
+          script.id = "UqXCf7xEtAf1MVOcRAI98";
+          script.domain = "www.chatbase.co";
+          document.body.appendChild(script);
+        };
+        if (document.readyState === "complete") {
+          onLoad();
+        } else {
+          window.addEventListener("load", onLoad);
+        }
+      })();
+    </script>
+
+    <script>
+      //Discover confirmation
+      document.addEventListener("DOMContentLoaded", () => {
+        const discoverLink = document.getElementById("discoverLink");
+        const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+
+        if (discoverLink) {
+          discoverLink.addEventListener("click", function (e) {
+            e.preventDefault();
+            if (loggedInUser) {
+              window.location.href = "HTML_discover.html"; // Allow navigation
+            } else {
+              alert("Please login first to access Discover.");
+              const loginModal = document.getElementById("loginModal");
+              if (loginModal) {
+                loginModal.style.display = "block";
+              }
+            }
+          });
+        }
+      });
+    </script>
+
+    <script>
+      // Slideshow Functionality
+      let currentSlide = 0;
+      const heroSlides = document.querySelectorAll(".hero-slide");
+
+      function showHeroSlide(n) {
+        heroSlides.forEach((slide) => slide.classList.remove("active"));
+        currentSlide = (n + heroSlides.length) % heroSlides.length;
+        heroSlides[currentSlide].classList.add("active");
+      }
+
+      function nextHeroSlide() {
+        showHeroSlide(currentSlide + 1);
+      }
+
+      setInterval(nextHeroSlide, 5000);
+
+      // Scroll Effect
+      window.addEventListener("scroll", function () {
+        const scrollPosition = window.scrollY;
+        const header = document.getElementById("mainHeader");
+
+        if (scrollPosition > 50) {
+          header.classList.add("scrolled");
+          document.body.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+          document.body.classList.remove("scrolled");
+        }
+
+        const maxScroll = 300;
+        const scrollPercent = Math.min(scrollPosition / maxScroll, 1);
+        const darkenAmount = scrollPercent * 0.2;
+
+        document.body.style.setProperty(
+          "--card-bg",
+          `rgba(255, 255, 255, ${0.08 + darkenAmount})`
+        );
+      });
+
+      // Modal Functionality - Login & Register Display
+      document
+        .getElementById("loginBtn")
+        .addEventListener("click", function () {
+          document.getElementById("loginModal").style.display = "block";
+        });
+
+      document
+        .getElementById("registerBtn")
+        .addEventListener("click", function () {
+          document.getElementById("registerModal").style.display = "block";
+        });
+
+      function closeModal(id) {
+        document.getElementById(id).style.display = "none";
+      }
+
+      function showRegister() {
+        closeModal("loginModal");
+        document.getElementById("registerModal").style.display = "block";
+      }
+
+      function showLogin() {
+        closeModal("registerModal");
+        document.getElementById("loginModal").style.display = "block";
+      }
+
+      // Close modal when clicking outside
+      window.onclick = function (event) {
+        if (event.target.classList.contains("modal")) {
+          document.querySelectorAll(".modal").forEach((modal) => {
+            modal.style.display = "none";
+          });
+        }
+      };
+
+      // Login
+      document
+        .getElementById("loginForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const email = document.getElementById("loginEmail").value;
+          const password = document.getElementById("loginPassword").value;
+
+          const users = JSON.parse(localStorage.getItem("users")) || [];
+
+          const user = users.find(
+            (u) => u.email === email && u.password === password
+          );
+
+          if (user) {
+            localStorage.setItem("loggedInUser", JSON.stringify(user));
+            alert(`Welcome, ${user.name}!`);
+            window.location.href = "HTML_discover.html";
+          } else {
+            alert("Invalid email or password.");
+          }
+        });
+
+      // Register
+      document
+        .getElementById("registerForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const name = document.getElementById("regName").value;
+          const email = document.getElementById("regEmail").value;
+          const password = document.getElementById("regPassword").value;
+          const confirmPassword =
+            document.getElementById("regConfirmPassword").value;
+
+          if (password !== confirmPassword) {
+            alert("Passwords do not match. Please try again.");
+            return;
+          }
+
+          const users = JSON.parse(localStorage.getItem("users")) || [];
+
+          const emailExists = users.some((user) => user.email === email);
+          if (emailExists) {
+            alert("Email already registered!");
+            return;
+          }
+
+          users.push({ name, email, password });
+          localStorage.setItem("users", JSON.stringify(users));
+          alert("Registration successful! You can now log in.");
+          document.getElementById("registerModal").style.display = "none";
+          document.getElementById("loginModal").style.display = "block";
+        });
+
+      // Current Loggedin user ay massaved
+      document.addEventListener("DOMContentLoaded", function () {
+        const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+
+        const loginBtn = document.getElementById("loginBtn");
+        const registerBtn = document.getElementById("registerBtn");
+
+        if (loggedInUser) {
+          if (loginBtn) loginBtn.style.display = "none";
+          if (registerBtn) registerBtn.style.display = "none";
+
+          // Show user info or logout
+          const navContainer = document.querySelector(".nav-container");
+          const userProfile = document.createElement("div");
+          userProfile.classList.add("user-profile");
+          userProfile.innerHTML = `
+                    <i class='fas fa-user-alt'></i>
+                    <span>${loggedInUser.name}</span>
+                    <button class="btn btn-outline" onclick="logout()">Logout</button>
+                `;
+          navContainer.appendChild(userProfile);
+        }
+
+        window.logout = function () {
+          localStorage.removeItem("loggedInUser");
+          location.reload();
+        };
+      });
+
+      // BUtton Functionality
+      document.addEventListener("DOMContentLoaded", function () {
+        const btn = document.getElementById("btn-how-it-works");
+        const featuresSection = document.getElementById("features");
+
+        if (btn && featuresSection) {
+          btn.addEventListener("click", function () {
+            featuresSection.scrollIntoView({ behavior: "smooth" });
+          });
+        }
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const btn = document.getElementById("btn-start-exploring");
+        const exploreSection = document.getElementById("discover");
+
+        if (btn && exploreSection) {
+          btn.addEventListener("click", function () {
+            exploreSection.scrollIntoView({ behavior: "smooth" });
+          });
+        }
+      });
+
+      document
+        .getElementById("btn-see-more")
+        .addEventListener("click", function () {
+          document.getElementById("loginModal").style.display = "block";
+
+          alert("PLease login first to see more destinations.");
+        });
+
+      document.querySelector('a[href=""]').addEventListener("click", (e) => {
+        e.preventDefault();
+        document.getElementById("loginModal").style.display = "block";
+
+        alert("PLease login first to see more destinations.");
+      });
+
+      //FOOTER FUNCTIONALITY
+      document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll(".footer-link").forEach((link) => {
+          link.addEventListener("click", function (e) {
+            if (!window.location.pathname.endsWith("HTML_About.html")) {
+              sessionStorage.setItem("scrollTo", this.getAttribute("href"));
+              window.location.href = "HTML_About.html";
+              return;
+            }
+
+            // para mag scroll to section
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute("href"));
+            if (target) {
+              window.scrollTo({
+                top: target.offsetTop - 100,
+                behavior: "smooth",
+              });
+            }
+          });
+        });
+
+        // scroll position
+        if (
+          window.location.pathname.endsWith("HTML_About.html") &&
+          sessionStorage.getItem("scrollTo")
+        ) {
+          const target = document.querySelector(
+            sessionStorage.getItem("scrollTo")
+          );
+          if (target) {
+            setTimeout(() => {
+              window.scrollTo({
+                top: target.offsetTop - 100,
+                behavior: "smooth",
+              });
+              sessionStorage.removeItem("scrollTo");
+            }, 100);
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
