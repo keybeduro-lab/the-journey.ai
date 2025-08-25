@@ -34,4 +34,16 @@ the-journey.ai/
 
 ---
 
+## 🌍 Live Demo
+🔗 Visit the website here:  
+👉 [The Journey.ai](https://USERNAME.github.io/the-journey.ai)
+
+---
+
+## 👨‍💻 Author
+Developed by **Keybe Duro & Mon Gabriel Eta**  
+BSIT – Web Systems and Technologies Project  
+
+---
+
 
