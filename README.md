@@ -6,7 +6,7 @@ It aims to promote tourism by presenting destinations in an engaging and informa
 ---
 
 ## ✨ Features
-- 🏞️ **20 Tourist Destinations** – one from each municipality/city in Quezon Province  
+- 🏞️ **Various Tourist Destinations** – one from each municipality/city in Quezon Province  
 - 💻 **Responsive Web Design** – accessible on desktop and mobile devices  
 - 📸 **Image Galleries** – highlights each destination with visuals  
 - 📍 **Short & Detailed Descriptions** – includes historical, cultural, and travel details  
@@ -16,7 +16,7 @@ It aims to promote tourism by presenting destinations in an engaging and informa
 ## 🚀 Technologies Used
 - **HTML5** – structure  
 - **CSS3** – styling & layout  
-- **JavaScript** – interactivity *(optional if you add scripts)*  
+- **JavaScript** – interactivity  
 
 ---
 
